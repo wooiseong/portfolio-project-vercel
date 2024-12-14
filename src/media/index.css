@@ -1,0 +1,1419 @@
+@media screen and (max-width: 1400px) {
+  * {
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+  }
+  body,
+  ul {
+    margin: 0;
+    padding: 0;
+    font-size: clamp(0.96rem, 1.5vw, 1.2rem);
+    font-weight: 400;
+    font-family: " zen Maru Gothic";
+    color: #000;
+    font-family: 'Noto Sans TC';
+  }
+  a {
+    font-size: clamp(0.96rem, 1.5vw, 1.2rem);
+    font-weight: 400;
+    font-family: " zen Maru Gothic";
+    color: #000;
+  }
+  h1 {
+    font-size: clamp(2.4rem, 1.5vw, 3rem);
+    font-weight: 700;
+    font-family: " zen Maru Gothic";
+    color: #000;
+  }
+  h2 {
+    font-size: clamp(2.4rem, 1.5vw, 3rem);
+    font-weight: 700;
+    font-family: " zen Maru Gothic";
+    color: #000;
+    text-shadow: 2px 3px 6px #BEBEBE;
+    line-height: 0;
+  }
+  h3 {
+    font-size: clamp(1.6rem, 1.5vw, 2rem);
+    font-weight: 500;
+    font-family: "Zen Maru Gothic";
+    color: #000;
+  }
+  h4 {
+    line-height: 0.53333333vw;
+  }
+  .button-55 {
+    align-self: center;
+    background-color: #fff;
+    background-position: 0 90%;
+    background-size: 0.25rem 0.19rem;
+    border-radius: 0.94rem 14.1rem 16rem 0.94rem 0.94rem 16rem 14.1rem 0.94rem;
+    border-style: solid;
+    box-shadow: rgba(0, 0, 0, 0.5) 0.94rem 1.75rem 1.6rem -1.125rem;
+    box-sizing: border-box;
+    cursor: pointer;
+    display: inline-block;
+    line-height: 1.44rem;
+    outline: none;
+    padding: 1.46666667vw;
+    transition: all 235ms ease-in-out;
+    border-bottom-left-radius: 0.94rem 14.1rem;
+    border-bottom-right-radius: 14.1rem 0.94rem;
+    border-top-left-radius: 16rem 0.94rem;
+    border-top-right-radius: 0.94rem 14.1rem;
+    font-size: 1.5rem;
+  }
+  .button-55:hover {
+    box-shadow: rgba(0, 0, 0, 0.3) 0.125rem 0.5rem 0.5rem -0.3rem;
+    transform: translate3d(0, 0.125rem, 0);
+  }
+  .button-55:hover .fa-solid {
+    color: #009100;
+  }
+  .button-55:hover a {
+    color: #009100;
+    font-weight: 700;
+  }
+  .button-55:focus {
+    box-shadow: rgba(0, 0, 0, 0.3) 0.125rem 0.5rem 0.25rem -0.375rem;
+  }
+  .button-55:active {
+    box-shadow: rgba(0, 0, 0, 0.7) 0.94rem 1.75rem 1.6rem -1.125rem;
+  }
+  .common_container {
+    width: 100%;
+    padding: 5.33333333vw;
+    text-align: center;
+  }
+  .nav_RWDcontainer {
+    display: none;
+    margin: 1.06666667vw 2.4vw;
+    position: fixed;
+    width: 95%;
+    justify-content: space-evenly;
+    align-items: center;
+    z-index: 100;
+  }
+  .nav_RWDcontainer .nav_RWDlogo img {
+    width: 32%;
+  }
+  .nav_RWDcontainer .nav_RWDicon {
+    font-size: clamp(1.6rem, 1.5vw, 2rem);
+    font-weight: 400;
+    font-family: " zen Maru Gothic";
+    color: #fff;
+    background-color: #000;
+    padding: 0.8vw 1.06666667vw;
+    border-radius: 1.06666667vw;
+  }
+  .nav_container {
+    display: flex;
+    position: fixed;
+    z-index: 3;
+    width: 95%;
+    height: 5.33333333vw;
+    border-radius: 0.53333333vw;
+    margin: 0.53333333vw 2.4vw;
+    background-color: rgba(0, 0, 0, 0.3);
+    transition: all 0.8s;
+  }
+  .nav_container .nav_logo {
+    width: 10%;
+    height: auto;
+    position: relative;
+  }
+  .nav_container .nav_logo img {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    translate: 20% -50%;
+    width: 100%;
+  }
+  .nav_container .nav_list {
+    width: 100%;
+  }
+  .nav_container .nav_list .nav_item {
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  .nav_container .nav_list .nav_item a {
+    color: #fff;
+  }
+  .nav_container .nav_list .nav_item a:hover {
+    font-size: clamp(0.96rem, 1.5vw, 1.2rem);
+    font-weight: 700;
+    font-family: " zen Maru Gothic";
+    color: #fff;
+  }
+  .nav_active {
+    font-size: clamp(0.96rem, 1.5vw, 1.2rem);
+    font-weight: 700;
+    font-family: " zen Maru Gothic";
+    color: #000;
+  }
+  .message_container {
+    margin-top: 6.66666667vw;
+    width: 50%;
+    padding: 1.33333333vw;
+    position: fixed;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    z-index: 1000;
+    border: 0.13333333vw solid;
+    border-radius: 2.66666667vw;
+    display: none;
+    animation: showup 4s forwards;
+  }
+  @keyframes showup {
+    0% {
+      opacity: 0;
+    }
+    20% {
+      opacity: 1;
+    }
+    80% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+  .carousel_list {
+    position: relative;
+    height: 50.66666667vw;
+  }
+  .carousel_list .carousel_item {
+    display: flex;
+    overflow: hidden;
+  }
+  .carousel_list .carousel_item li {
+    display: none;
+  }
+  .carousel_list .carousel_item li img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -2;
+  }
+  .carousel_list .carousel_item li .carousel_text {
+    margin: 8vw 8vw 0 10.66666667vw;
+  }
+  .carousel_list .carousel_item li .carousel_text .carousel_title {
+    font-size: clamp(4rem, 1.5vw, 5rem);
+    font-weight: 900;
+    font-family: 'Lato';
+    color: #000;
+  }
+  .carousel_list .carousel_item li .carousel_text .carousel_title span {
+    color: #00DB00;
+  }
+  .carousel_list .carousel_item li .carousel_text .carousel_subtitle {
+    font-size: clamp(1.6rem, 1.5vw, 2rem);
+    font-weight: 700;
+    font-family: "zen maru gothic";
+    color: #000;
+  }
+  .carousel_list .carousel_item li .button-55 {
+    margin-bottom: 8vw;
+  }
+  .carousel_list .carousel_indicator {
+    position: absolute;
+    bottom: 4%;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: space-between;
+  }
+  .carousel_list .carousel_indicator .carousel_item {
+    margin: 0 0.53333333vw;
+    background-color: #000;
+    opacity: 0.2;
+    padding: 0.2vw 1.33333333vw;
+    transition: all 0.5s;
+    cursor: pointer;
+  }
+  .carousel_list .carousel_indicator .carousel_item:hover {
+    opacity: 1;
+  }
+  .carousel_icon a {
+    font-size: clamp(2.4rem, 1.5vw, 3rem);
+    font-weight: 400;
+    font-family: " zen Maru Gothic";
+    color: #000;
+    transition: all 0.5s;
+    opacity: 0.1;
+  }
+  .carousel_icon a:hover {
+    opacity: 1;
+  }
+  .fa-angle-left {
+    position: absolute;
+    top: 50%;
+    left: 0%;
+    padding-left: 1%;
+  }
+  .fa-angle-right {
+    position: absolute;
+    top: 50%;
+    right: 0%;
+    padding-right: 1%;
+  }
+  .carousel_active {
+    opacity: 1 !important;
+  }
+  .carousel_show {
+    display: block !important;
+  }
+  .typing {
+    margin: 4vw 0;
+    padding: 0 0 3.46666667vw 0;
+    width: 18.5em;
+    height: 2.66666667vw;
+    border-right: 1px solid transparent;
+    animation: typing 1s steps(42, end), blink-caret 0.5s step-end infinite;
+    word-break: break-all;
+    overflow: hidden;
+    font-size: clamp(1.6rem, 1.5vw, 2rem);
+    font-weight: 400;
+    font-family: "zen maru gothic";
+    color: #000;
+  }
+  @keyframes typing {
+    from {
+      width: 0;
+    }
+    to {
+      width: 18.5em;
+    }
+  }
+  @keyframes blink-caret {
+    from,
+    to {
+      border-color: transparent;
+    }
+    50% {
+      border-color: currentColor;
+    }
+  }
+  .count_container {
+    padding: 2.66666667vw;
+  }
+  .count_container .count_body {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  .count_container .count_body li {
+    flex: 1;
+  }
+  .count_container .count_body li:nth-child(-n+3) {
+    position: relative;
+  }
+  .count_container .count_body li:nth-child(-n+3)::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    width: 100%;
+    height: 40%;
+    border-right: 0.13333333vw solid #BEBEBE;
+  }
+  .count_container .count_body .count_title {
+    font-size: clamp(4rem, 1.5vw, 5rem);
+    font-weight: 900;
+    font-family: 'Noto Sans TC';
+    color: #018749;
+    line-height: 3.2vw;
+  }
+  .count_container .count_body .count_descp {
+    font-size: clamp(1.6rem, 1.5vw, 2rem);
+    font-weight: 400;
+    font-family: " zen Maru Gothic";
+    color: #000;
+    font-weight: 700;
+    line-height: 0;
+  }
+  .caption_container {
+    background-color: #01B468;
+    text-align: center;
+    padding: 5.33333333vw 0;
+    color: #fff;
+    word-break: break-all;
+  }
+  .caption_container .caption_header {
+    font-size: clamp(2.4rem, 1.5vw, 3rem);
+    font-weight: 700;
+    font-family: 'zen maru gothic';
+    color: #fff;
+    margin-bottom: 1.33333333vw;
+  }
+  .caption_container .caption_body {
+    margin-bottom: 2.66666667vw;
+  }
+  .about_container .about_text {
+    width: 90%;
+    margin: 0 auto;
+  }
+  .about_container .about_text .about_item {
+    display: flex;
+    border-radius: 1.33333333vw 1.33333333vw 0 0;
+    width: 100%;
+  }
+  .about_container .about_text .about_item li {
+    flex: 1;
+    padding: 1.06666667vw;
+    border-radius: 1.33333333vw 1.33333333vw 0 0;
+    font-size: clamp(1.2rem, 1.5vw, 1.5rem);
+    font-weight: 700;
+    font-family: " zen Maru Gothic";
+    color: #fff;
+    background-color: #000;
+    transition: all 0.3s;
+    cursor: pointer;
+  }
+  .about_container .about_text .about_item li:hover {
+    background-color: #D0D0D0;
+    color: #000;
+  }
+  .about_container .about_text .about_cover {
+    position: relative;
+    padding: 2.66666667vw;
+    background-color: #D0D0D0;
+  }
+  .about_container .about_text .about_cover .about_indicator {
+    position: absolute;
+    top: 2%;
+    left: 0;
+    display: flex;
+  }
+  .about_container .about_text .about_cover .about_indicator li {
+    width: 1.06666667vw;
+    height: 1.06666667vw;
+    border-radius: 2.13333333vw;
+    margin-left: 2.66666667vw;
+    background-color: #fff;
+  }
+  .about_container .about_text .about_cover .about_indicator li:nth-child(1) {
+    background-color: #FF5151;
+  }
+  .about_container .about_text .about_cover .about_indicator li:nth-child(2) {
+    background-color: #FFD306;
+  }
+  .about_container .about_text .about_cover .about_indicator li:nth-child(3) {
+    background-color: #00EC00;
+  }
+  .about_container .about_text .about_descp .about_li {
+    display: none;
+    background-color: #fff;
+    padding: 0.8vw 4.8vw;
+    border-radius: 0.4vw;
+    box-shadow: inset rgba(0, 0, 0, 0.12) 0px 1px 3px, inset rgba(0, 0, 0, 0.24) 0px 1px 2px;
+  }
+  .about_container .about_text .about_descp .about_li .highlight_text {
+    display: inline-block;
+    border-left: 5px solid #FF5151 !important;
+    padding: 1.33333333vw !important;
+    background-color: #FFD2D2 !important;
+  }
+  .about_container .about_text .about_descp h3 {
+    padding-bottom: 1.33333333vw;
+    border-bottom: 3px solid #000;
+  }
+  .about_container .about_text .about_descp p {
+    text-align: left;
+  }
+  .about_active {
+    background-color: #D0D0D0 !important;
+    color: #000 !important;
+  }
+  .about_descp_active {
+    display: block !important;
+  }
+  .git_container {
+    background-color: #01B468;
+    text-align: left;
+    padding: 6.66666667vw 13.33333333vw;
+    width: 100%;
+    position: relative;
+  }
+  .git_container .git_header {
+    font-size: clamp(2rem, 1.5vw, 2.5rem);
+    font-weight: 400;
+    font-family: " zen Maru Gothic";
+    color: #fff;
+  }
+  .git_container .git_img {
+    width: 50%;
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+  .git_container .git_img img {
+    width: 100%;
+  }
+  .skills_container .skills_body {
+    height: 58.66666667vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .skills_container .skills_body ul {
+    position: relative;
+    background-color: #fff;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 1.33333333vw;
+    flex-wrap: wrap;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+  }
+  .skills_container .skills_body ul .skills_title {
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-color: #000 transparent transparent transparent;
+    border-style: solid solid solid solid;
+    border-width: 12vw 12vw 0px 0px;
+    height: 0;
+    width: 0;
+  }
+  .skills_container .skills_body ul h3 {
+    position: absolute;
+    top: 0%;
+    left: 0.5%;
+    transform: rotate(-45deg);
+    font-size: clamp(1.6rem, 1.5vw, 2rem);
+    font-weight: 500;
+    font-family: "Zen Maru Gothic";
+    color: #fff;
+  }
+  .skills_container .skills_body ul li {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .skills_container .skills_body ul li .skills_img {
+    position: relative;
+    border-radius: 0.53333333vw;
+    width: 8vw;
+    height: 8vw;
+    transition: all 0.3s;
+    cursor: pointer;
+  }
+  .skills_container .skills_body ul li .skills_img img {
+    width: 100%;
+    height: 100%;
+    border-radius: 0.53333333vw;
+  }
+  .skills_container .skills_body ul li .skills_img span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0% ;
+    left: 0%;
+    opacity: 0;
+    word-break: break-all;
+    border-radius: 0.53333333vw;
+    background-color: rgba(0, 0, 0, 0.6);
+    font-size: clamp(0.8rem, 1.5vw, 1rem);
+    font-weight: 500;
+    font-family: "zen maru gothic";
+    color: #fff;
+  }
+  .skills_container .skills_body ul li .skills_icon {
+    font-size: clamp(4rem, 1.5vw, 5rem);
+    font-weight: 400;
+    font-family: " zen Maru Gothic";
+    color: #000;
+    transition: all 0.2s;
+  }
+  .skills_container .skills_body ul li:hover .skills_img {
+    transform: scale(1.1);
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+  }
+  .skills_container .skills_body ul li:hover span {
+    opacity: 1;
+  }
+  .skills_container .skills_body ul li:hover .skills_icon {
+    font-size: clamp(4rem, 1.5vw, 5rem);
+    font-weight: 400;
+    font-family: " zen Maru Gothic";
+    color: #01B468;
+  }
+  .soft_container {
+    background-color: #3c3c3c;
+  }
+  .soft_container i {
+    font-size: clamp(2.4rem, 1.5vw, 3rem);
+    font-weight: 700;
+    font-family: "Zen Maru Gothic";
+    color: #79FF79;
+    font-style: normal;
+  }
+  .soft_icon {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+  }
+  .soft_icon .soft_icon_item {
+    flex: 1;
+    padding: 2.66666667vw;
+    font-size: clamp(0.96rem, 1.5vw, 1.2rem);
+    font-weight: 500;
+    font-family: " zen Maru Gothic";
+    color: #fff;
+    transition: all 0.5s;
+    overflow: hidden;
+    position: relative;
+  }
+  .soft_icon .soft_icon_item::after {
+    content: '';
+    position: absolute;
+    top: 0px;
+    left: -50%;
+    background: white;
+    width: 50%;
+    height: 200%;
+    opacity: 20%;
+    transform: skewX(20deg);
+  }
+  .soft_icon .soft_icon_item:hover::after {
+    left: 200%;
+    transition: all 2s cubic-bezier(0.3, 1, 0.2, 1);
+  }
+  .soft_icon .soft_icon_item h3 {
+    font-size: clamp(1.6rem, 1.5vw, 2rem);
+    font-weight: 500;
+    font-family: "Zen Maru Gothic";
+    color: #fff;
+  }
+  .soft_icon .soft_icon_item i {
+    font-size: 8rem;
+    color: #fff;
+  }
+  .soft_icon .soft_icon_item:nth-child(1) {
+    background-color: #FF8040;
+  }
+  .soft_icon .soft_icon_item:nth-child(2) {
+    background-color: #2828FF;
+  }
+  .soft_icon .soft_icon_item:nth-child(3) {
+    background-color: #D9006C;
+  }
+  .soft_icon .soft_icon_item:nth-child(4) {
+    background-color: #5B00AE;
+  }
+  .project_item {
+    margin-bottom: 4vw;
+    padding: 2.66666667vw 0 2.66666667vw 0;
+    display: flex;
+    justify-content: space-between;
+    text-align: left;
+  }
+  .project_img {
+    width: 50%;
+    display: flex;
+    position: relative;
+    border: 1px solid #000;
+    border-radius: 0.53333333vw;
+  }
+  .project_img .img_1_container {
+    position: relative;
+    overflow: hidden;
+    border-radius: 0.53333333vw;
+  }
+  .project_img .img_1_container .img_cover {
+    position: relative;
+    border: 1px solid #000;
+    background-color: rgba(0, 0, 0, 0.6);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    bottom: -100%;
+    left: 0;
+    border-radius: 0.53333333vw;
+    transition: all 1s;
+    z-index: 2;
+    padding: 1.33333333vw 2.66666667vw;
+    opacity: 0;
+    font-size: clamp(0.96rem, 1.5vw, 1.2rem);
+    font-weight: 400;
+    font-family: 'Noto Sans TC';
+    color: #fff;
+  }
+  .project_img .img_1_container .img_cover h4 {
+    line-height: 0;
+  }
+  .project_img .img_1_container .img_cover .img_button {
+    margin-top: 1.33333333vw;
+    display: flex;
+    justify-content: space-between;
+  }
+  .project_img .img_1_container .img_cover .img_button a {
+    background-color: #018749;
+    border-radius: 1.46666667vw;
+    padding: 0.53333333vw;
+    font-size: clamp(1.6rem, 1.5vw, 2rem);
+    font-weight: 400;
+    font-family: " zen Maru Gothic";
+    color: #fff;
+  }
+  .project_img .img_1_container .img_cover .img_button a:hover {
+    font-size: clamp(1.6rem, 1.5vw, 2rem);
+    font-weight: 400;
+    font-family: " zen Maru Gothic";
+    color: #018749;
+    background-color: #fff;
+  }
+  .project_img .img_1_container img {
+    width: 100%;
+    height: 100%;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  }
+  .project_img .img_1_container:hover {
+    box-shadow: #0bda0b 0px 5px 15px;
+  }
+  .project_img .img_1_container:hover .img_cover {
+    bottom: 0%;
+    opacity: 1;
+  }
+  .project_img .img_2 {
+    background-color: #000;
+    padding: 0.4vw;
+    border-radius: 0.53333333vw;
+    width: 23%;
+    position: absolute;
+    bottom: 1%;
+    right: -15%;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+  }
+  .project_img .img_2:hover {
+    animation: phone-shaking 1s infinite;
+    background-color: #4CBB17;
+  }
+  @keyframes phone-shaking {
+    0% {
+      transform: skewY(-5deg);
+    }
+    5% {
+      transform: skewY(5deg);
+    }
+    10% {
+      transform: skewY(-5deg);
+    }
+    15% {
+      transform: skewY(5deg);
+    }
+    20% {
+      transform: skewY(0deg);
+    }
+    100% {
+      transform: skewY(0deg);
+    }
+  }
+  .project_descp {
+    flex: 1;
+    margin-left: 5.33333333vw;
+    padding-left: 4vw;
+    text-align: left;
+  }
+  .project_descp .project_title {
+    line-height: 0.53333333vw;
+    font-size: clamp(1.6rem, 1.5vw, 2rem);
+    font-weight: 700;
+    font-family: "Lato";
+    color: #000;
+  }
+  .project_descp .fa-circle-check {
+    display: block;
+  }
+  .project_descp .project_tag {
+    margin-top: 4vw;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  .project_descp .project_tag li {
+    padding: 0.26666667vw 0.66666667vw;
+    border-radius: 1.06666667vw;
+    background-color: #018749;
+    font-size: clamp(0.88rem, 1.5vw, 1.1rem);
+    font-weight: 700;
+    font-family: "zen maru gothic";
+    color: #fff;
+  }
+  .project_extraInfo {
+    background-color: #f8f8f8;
+    padding: 4vw 4vw 5.33333333vw;
+    text-align: left !important;
+  }
+  .project_extraInfo .fa-quote-left {
+    text-align: left;
+    font-size: 2rem;
+  }
+  .project_extraInfo .project_extraInfoText {
+    border-left: 2px solid #000;
+    margin-left: 0.93333333vw;
+  }
+  .project_extraInfo .project_extraInfoText .project_extraInfoTitle {
+    margin-left: 2.66666667vw;
+    margin-top: 0;
+    font-size: clamp(2.4rem, 1.5vw, 3rem);
+    font-weight: 700;
+    font-family: "Lato";
+    color: #000;
+  }
+  .project_extraInfo .project_extraInfoText .project_extraInfoItem {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  .project_extraInfo .project_extraInfoText .project_extraInfoItem .project_extraInfoIcon {
+    color: #9e9e9e;
+    margin: 1.33333333vw 0;
+    padding: 2.66666667vw;
+    border: 1px solid #e0e0e0;
+    background-color: #ffffff;
+    transition: all 0.5s;
+  }
+  .project_extraInfo .project_extraInfoText .project_extraInfoItem .project_extraInfoIcon .fa-solid {
+    font-size: 3.5rem;
+    color: #9e9e9e;
+  }
+  .project_extraInfo .project_extraInfoText .project_extraInfoItem .project_extraInfoIcon h4 {
+    font-size: clamp(1.6rem, 1.5vw, 2rem);
+    font-weight: 700;
+    font-family: " zen Maru Gothic";
+    color: #9e9e9e;
+    display: inline;
+  }
+  .project_extraInfo .project_extraInfoText .project_extraInfoItem .project_extraInfoIcon:hover {
+    color: #000;
+    border: 2px solid #018749;
+    box-shadow: 4px 4px 16px rgba(0, 0, 0, 0.3);
+    scale: 1.15;
+  }
+  .project_extraInfo .project_extraInfoText .project_extraInfoItem .project_extraInfoIcon:hover .fa-solid {
+    color: #018749;
+  }
+  .project_extraInfo .project_extraInfoText .project_extraInfoItem .project_extraInfoIcon:hover h4 {
+    color: #000;
+  }
+  .resume_container {
+    position: relative;
+    width: 70%;
+    margin: 5.33333333vw auto 10.66666667vw;
+    border: 0.8vw solid #000;
+    background-color: #018749;
+    font-size: clamp(1.8rem, 1.5vw, 2.25rem);
+    font-weight: 500;
+    font-family: "zen maru gothic";
+    color: #fff;
+  }
+  .resume_container .resume_text {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 1.33333333vw;
+  }
+  .resume_container .fa-wand-magic {
+    position: absolute;
+    bottom: 10%;
+    left: 7%;
+    font-size: 2.13333333vw;
+  }
+  .resume_container .fa-minus {
+    position: absolute;
+    bottom: 1%;
+    left: 1%;
+    font-size: 5.33333333vw;
+    line-height: 0;
+    color: #8E8E8E;
+  }
+  .feedback_container {
+    background-image: url("https://i.ibb.co/QrV94Zq/feedback-6.png");
+    background-attachment: fixed;
+    background-size: cover;
+    min-width: 100%;
+    font-size: clamp(0.96rem, 1.5vw, 1.2rem);
+    font-weight: 400;
+    font-family: " zen Maru Gothic";
+    color: #fff;
+    padding: 5.33333333vw 0;
+  }
+  .feedback_container h2 {
+    font-size: clamp(2.4rem, 1.5vw, 3rem);
+    font-weight: 700;
+    font-family: " zen Maru Gothic";
+    color: #fff;
+  }
+  .feedback_container .feedback_background {
+    width: 70%;
+    margin: 0  auto;
+    text-align: center;
+  }
+  .feedback_container .feedback_background .feedback_item {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 2.66666667vw 4vw;
+  }
+  .feedback_container .feedback_background .feedback_item .feedback_text {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  .feedback_container .feedback_background .feedback_item input,
+  .feedback_container .feedback_background .feedback_item textarea {
+    width: 24vw;
+    outline: none;
+    border: none;
+    border-bottom: 0.13333333vw solid #ADADAD;
+    resize: none;
+    transition: all 0.2s;
+    margin-top: 5.86666667vw;
+    overflow-y: hidden;
+    font-size: clamp(0.96rem, 1.5vw, 1.2rem);
+    font-weight: 400;
+    font-family: " zen Maru Gothic";
+    color: #000;
+    background-color: transparent;
+  }
+  .feedback_container .feedback_background .feedback_item input:focus,
+  .feedback_container .feedback_background .feedback_item textarea:focus {
+    border: none;
+    border-bottom: 0.13333333vw solid #00BB00;
+    background-color: #F0FFF0;
+  }
+  .feedback_container .feedback_background .feedback_item input::placeholder,
+  .feedback_container .feedback_background .feedback_item textarea::placeholder {
+    font-size: clamp(0.8rem, 1.5vw, 1rem);
+    font-weight: 400;
+    font-family: " zen Maru Gothic";
+    color: #7B7B7B;
+  }
+  .feedback_container .feedback_background .feedback_item span {
+    font-size: clamp(1.44rem, 1.5vw, 1.8rem);
+    font-weight: 400;
+    font-family: " zen Maru Gothic";
+    color: #00BB00;
+  }
+  .feedback_container .feedback_background .feedback_item .msg {
+    font-size: clamp(0.8rem, 1.5vw, 1rem);
+    font-weight: 400;
+    font-family: " zen Maru Gothic";
+    color: red;
+  }
+  .feedback_container .feedback_background .feedback_reminder {
+    margin-top: 2.66666667vw;
+    font-size: clamp(0.8rem, 1.5vw, 1rem);
+    font-weight: 400;
+    font-family: " zen Maru Gothic";
+    color: #000;
+    text-align: left;
+  }
+  .contact_container {
+    width: 100%;
+    padding: 3.46666667vw;
+    background-color: #01B468;
+    text-align: center;
+  }
+  .contact_container .contact_item img {
+    width: 16%;
+    border: 2px solid #fff;
+  }
+  .contact_container .contact_descp {
+    width: 30%;
+    margin: 1.33333333vw auto;
+    display: flex;
+    justify-content: space-evenly;
+  }
+  .contact_container .contact_descp li {
+    transition: all 0.3s;
+  }
+  .contact_container .contact_descp li a {
+    font-size: clamp(2.4rem, 1.5vw, 3rem);
+    font-weight: 400;
+    font-family: " zen Maru Gothic";
+    color: #fff;
+  }
+  .contact_container .contact_descp li:hover {
+    transform: scale(1.4);
+  }
+}
+@media screen and (max-width: 996px) {
+  .carousel_list {
+    height: 72vw;
+  }
+  .carousel_list .carousel_indicator {
+    bottom: 12%;
+  }
+  .typing {
+    font-size: clamp(1.44rem, 1.5vw, 1.8rem);
+    font-weight: 400;
+    font-family: "zen maru gothic";
+    color: #000;
+  }
+  .about_container .about_text {
+    width: 100%;
+  }
+  .skills_container .skills_icon {
+    font-size: clamp(2.8rem, 1.5vw, 3.5rem) !important;
+    font-weight: 400 !important;
+    font-family: " zen Maru Gothic" !important;
+    color: #000 !important;
+  }
+  .project_item {
+    margin-bottom: 10.66666667vw;
+    padding: 0;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .project_img {
+    width: 80%;
+    margin-right: 10.66666667vw;
+  }
+  .project_img .img_1_container {
+    font-size: clamp(1.04rem, 1.5vw, 1.3rem);
+    font-weight: 500;
+    font-family: " zen Maru Gothic";
+    color: #fff;
+  }
+  .project_img .img_1_container .img_cover .img_button {
+    margin-top: 2.66666667vw;
+  }
+  .project_img .img_1_container .img_cover .img_button a {
+    padding: 0.53333333vw;
+    font-size: clamp(1.6rem, 1.5vw, 2rem);
+    font-weight: 400;
+    font-family: " zen Maru Gothic";
+    color: #fff;
+  }
+  .project_img .img_1_container .img_cover .img_button a:hover {
+    font-size: clamp(1.6rem, 1.5vw, 2rem);
+    font-weight: 400;
+    font-family: " zen Maru Gothic";
+    color: #018749;
+  }
+  .project_descp {
+    flex: 1;
+    padding: 2.66666667vw 2.66666667vw 2.66666667vw 0vw;
+  }
+  .project_descp .project_tag {
+    justify-content: space-around;
+  }
+  .feedback_container {
+    width: 70%;
+  }
+}
+@media screen and (max-width: 768px) {
+  h1 {
+    font-size: clamp(2rem, 1.5vw, 2.5rem);
+    font-weight: 700;
+    font-family: " zen Maru Gothic";
+    color: #000;
+  }
+  .button-55 {
+    font-size: 1rem;
+  }
+  .nav_container {
+    height: 8vw;
+  }
+  .nav_container .nav_logo {
+    width: 13%;
+  }
+  .carousel_list {
+    height: 80vw;
+  }
+  .carousel_list img {
+    object-fit: none;
+  }
+  .carousel_list .carousel_indicator {
+    opacity: 0;
+  }
+  .carousel_list .carousel_text {
+    margin: 16vw 0 0 10.66666667vw;
+  }
+  .carousel_list .carousel_text .carousel_title {
+    font-size: clamp(3.36rem, 1.5vw, 4.2rem) !important;
+    font-weight: 900 !important;
+    font-family: 'Lato' !important;
+    color: #000 !important;
+    padding-top: 4vw;
+  }
+  .typing {
+    margin: 8vw 0;
+    width: 100%;
+    border-right: 0px;
+    word-break: break-all;
+    overflow: visible;
+    font-size: clamp(1.6rem, 1.5vw, 2rem);
+    font-weight: 400;
+    font-family: "zen maru gothic";
+    color: #000;
+  }
+  @keyframes typing {
+    from {
+      width: 100%;
+    }
+    to {
+      width: 100%;
+    }
+  }
+  .count_container .count_descp {
+    font-size: clamp(1.2rem, 1.5vw, 1.5rem) !important;
+    font-weight: 700 !important;
+    font-family: " zen Maru Gothic" !important;
+    color: #000 !important;
+  }
+  .git_container {
+    text-align: center;
+    padding-bottom: 8vw;
+  }
+  .git_container .git_img {
+    display: none;
+  }
+  .skills_container .skills_body {
+    height: 58.66666667vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .skills_container .skills_body ul .skills_title {
+    border-width: 13.33333333vw 13.33333333vw 0 0;
+  }
+  .skills_container .skills_body ul h3 {
+    position: absolute;
+    top: 0%;
+    left: 0.5%;
+    transform: rotate(-45deg);
+    font-size: clamp(1.2rem, 1.5vw, 1.5rem);
+    font-weight: 500;
+    font-family: "Zen Maru Gothic";
+    color: #fff;
+  }
+  .skills_container .skills_body ul .skills_img {
+    width: 6.66666667vw;
+    height: 6.66666667vw;
+  }
+  .skills_container .skills_body ul .skills_img span {
+    font-size: clamp(0.8rem, 1.5vw, 1rem);
+    font-weight: 500;
+    font-family: "zen maru gothic";
+    color: #fff;
+  }
+  .skills_container .skills_body ul .skills_icon {
+    font-size: clamp(4rem, 1.5vw, 5rem);
+    font-weight: 400;
+    font-family: " zen Maru Gothic";
+    color: #000;
+  }
+  .soft_icon .soft_icon_item {
+    overflow: visible;
+  }
+  .soft_icon .soft_icon_item::after {
+    display: none;
+  }
+  .project_img .img_1_container {
+    font-size: clamp(0.96rem, 1.5vw, 1.2rem);
+    font-weight: 500;
+    font-family: " zen Maru Gothic";
+    color: #fff;
+  }
+  .project_img .img_1_container .img_cover .img_button {
+    margin-top: 0vw;
+  }
+  .project_img .img_1_container .img_cover .img_button a {
+    font-size: clamp(2rem, 1.5vw, 2.5rem);
+    font-weight: 400;
+    font-family: " zen Maru Gothic";
+    color: #fff;
+  }
+  .project_img .img_1_container .img_cover .img_button a:hover {
+    font-size: clamp(2rem, 1.5vw, 2.5rem);
+    font-weight: 400;
+    font-family: " zen Maru Gothic";
+    color: #018749;
+  }
+  .resume_container {
+    border: 1.06666667vw solid #000;
+  }
+  .resume_container .resume_text {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 2.13333333vw 2.66666667vw 6.66666667vw 2.66666667vw;
+  }
+  .resume_container .fa-wand-magic {
+    position: absolute;
+    bottom: 10%;
+    left: 7%;
+    font-size: 4vw;
+  }
+  .resume_container .fa-minus {
+    position: absolute;
+    bottom: 1%;
+    left: 1%;
+    font-size: 9.33333333vw;
+    line-height: 0;
+    color: #8E8E8E;
+  }
+}
+@media screen and (max-width: 576px) {
+  h1 {
+    font-size: clamp(2.24rem, 1.5vw, 2.8rem);
+    font-weight: 700;
+    font-family: " zen Maru Gothic";
+    color: #000;
+  }
+  .nav_RWDcontainer {
+    display: flex;
+  }
+  .nav_container {
+    top: 8%;
+    opacity: 0;
+    height: 13.33333333vw;
+    border: 2px solid #000;
+    transition: all 0.5s;
+    animation: navBar_show 1s 1s forwards linear;
+  }
+  .nav_container .nav_logo {
+    display: none;
+  }
+  .nav_container .nav_item {
+    flex-wrap: wrap;
+  }
+  .nav_container .nav_item a {
+    font-size: clamp(1.04rem, 1.5vw, 1.3rem);
+    font-weight: 400;
+    font-family: " zen Maru Gothic";
+    color: #000;
+  }
+  .nav_container .nav_item a:hover {
+    font-size: clamp(1.04rem, 1.5vw, 1.3rem);
+    font-weight: 700;
+    font-family: " zen Maru Gothic";
+    color: #fff;
+  }
+  .navBar_show {
+    animation: slide_down 0.4s forwards linear;
+  }
+  .nav_active {
+    font-size: clamp(1.2rem, 1.5vw, 1.5rem);
+    font-weight: 700;
+    font-family: " zen Maru Gothic";
+    color: #000;
+  }
+  .carousel_list {
+    height: 125.33333333vw;
+  }
+  .carousel_list .carousel_text {
+    text-align: center;
+  }
+  .carousel_list .carousel_text .carousel_title {
+    font-size: clamp(3.04rem, 1.5vw, 3.8rem) !important;
+    font-weight: 900 !important;
+    font-family: 'Lato' !important;
+    color: #000 !important;
+  }
+  .typing {
+    margin: 8vw 0 18.66666667vw 0;
+  }
+  @keyframes slide_down {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  .count_container {
+    padding: 2.66666667vw;
+  }
+  .count_container .count_body {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  .count_container .count_body li {
+    flex: none;
+    padding: 0 2.66666667vw;
+  }
+  .count_container .count_body li:nth-child(-n+3)::after {
+    border-right: 0;
+  }
+  .count_container .count_body .count_title {
+    font-size: clamp(4rem, 1.5vw, 5rem);
+    font-weight: 900;
+    font-family: 'Noto Sans TC';
+    color: #018749;
+    line-height: 3.2vw;
+  }
+  .count_container .count_body .count_descp {
+    font-size: clamp(1.6rem, 1.5vw, 2rem);
+    font-weight: 400;
+    font-family: " zen Maru Gothic";
+    color: #000;
+    font-weight: 700;
+    line-height: 0;
+  }
+  .about_item li {
+    flex: 1;
+    padding: 1.06666667vw;
+    border-radius: 1.33333333vw 1.33333333vw 0 0;
+    font-size: clamp(1.2rem, 1.5vw, 1.5rem);
+    font-weight: 400;
+    font-family: " zen Maru Gothic";
+    color: #fff;
+    background-color: #000;
+    transition: all 0.3s;
+    cursor: pointer;
+  }
+  .about_item li:hover {
+    background-color: #D0D0D0;
+    color: #000;
+  }
+  .about_item li .fa-solid {
+    display: none;
+  }
+  .skills_container .skills_body {
+    height: 93.33333333vw !important;
+    justify-content: space-around !important;
+  }
+  .skills_container .skills_body .skills_title {
+    border-width: 21.33333333vw 21.33333333vw 0 0 !important;
+  }
+  .skills_container .skills_body h3 {
+    font-size: clamp(0.92rem, 1.5vw, 1.15rem) !important;
+    font-weight: 500 !important;
+    font-family: "Zen Maru Gothic" !important;
+    color: #fff !important;
+  }
+  .skills_container .skills_body .skills_img {
+    width: 10.66666667vw !important;
+    height: 10.66666667vw !important;
+  }
+  .skills_container .skills_body .skills_img span {
+    font-size: clamp(0.8rem, 1.5vw, 1rem);
+    font-weight: 500;
+    font-family: "zen maru gothic";
+    color: #fff;
+  }
+  .project_item {
+    margin-bottom: 16vw;
+  }
+  .project_img {
+    width: 100%;
+    margin: 0 auto;
+  }
+  .project_img .img_1_container .img_cover {
+    width: 100%;
+    height: 100%;
+    overflow-y: auto ;
+  }
+  .project_img .img_1_container .img_cover h4 {
+    line-height: 0vw;
+  }
+  .project_img .img_1_container .img_cover .img_button {
+    margin-top: 0vw;
+  }
+  .project_img .img_1_container .img_cover .img_button a {
+    font-size: clamp(1.6rem, 1.5vw, 2rem);
+    font-weight: 400;
+    font-family: " zen Maru Gothic";
+    color: #fff;
+    padding: 1.06666667vw;
+  }
+  .project_img .img_1_container .img_cover .img_button a:hover {
+    font-size: clamp(1.6rem, 1.5vw, 2rem);
+    font-weight: 400;
+    font-family: " zen Maru Gothic";
+    color: #018749;
+  }
+  .project_img .img_2 {
+    display: none;
+  }
+  .feedback_background .feedback_item .feedback_text {
+    flex-direction: column;
+  }
+  .feedback_background .feedback_item input,
+  .feedback_background .feedback_item textarea {
+    width: 40vw !important;
+  }
+  .contact_container .contact_item img {
+    width: 30%;
+  }
+  .contact_container .contact_descp {
+    width: 50%;
+  }
+}
+@media screen and (max-width: 375px) {
+  .nav_container {
+    height: 18.66666667vw;
+  }
+  .carousel_list {
+    height: 168vw;
+  }
+  .typing {
+    margin: 8vw 0 26.66666667vw 0;
+  }
+  .skills_container .skills_body {
+    height: 93.33333333vw !important;
+    justify-content: space-around !important;
+  }
+  .skills_container .skills_body h3 {
+    font-size: clamp(0.8rem, 1.5vw, 1rem) !important;
+    font-weight: 500 !important;
+    font-family: "Zen Maru Gothic" !important;
+    color: #fff !important;
+  }
+  .skills_container .skills_body .skills_icon {
+    font-size: clamp(2rem, 1.5vw, 2.5rem) !important;
+    font-weight: 400 !important;
+    font-family: " zen Maru Gothic" !important;
+    color: #000 !important;
+  }
+  .project_img .img_1_container {
+    font-size: clamp(0.84rem, 1.5vw, 1.05rem);
+    font-weight: 500;
+    font-family: " zen Maru Gothic";
+    color: #fff;
+  }
+  .project_img .img_1_container .img_cover .img_button {
+    margin-top: 0vw;
+  }
+  .project_img .img_1_container .img_cover .img_button a {
+    padding: 0.53333333vw;
+    font-size: clamp(1.2rem, 1.5vw, 1.5rem);
+    font-weight: 400;
+    font-family: " zen Maru Gothic";
+    color: #fff;
+  }
+  .project_img .img_1_container .img_cover .img_button a:hover {
+    font-size: clamp(1.2rem, 1.5vw, 1.5rem);
+    font-weight: 400;
+    font-family: " zen Maru Gothic";
+    color: #018749;
+  }
+  .feedback_container {
+    width: 90%;
+  }
+  .feedback_container .feedback_item input,
+  .feedback_container .feedback_item textarea {
+    width: 106.66666667vw;
+  }
+}

@@ -1,0 +1,738 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="format-detection" content="telephone=no">
+  <meta name="description" content="Xiong專注為企業提供優質的網頁設計服務。經歷6個月的不間斷學習html,css,javascript,vue等前端知識，并完成了幾分專案。擅長觀察bug，並快速找到解決方案。期望可以入職前端工程師，協助切板、前端開發、優化網站效能，與PM,後端,和網頁設計師共事，提升自己的前端技術。">
+  <meta name="keywords" content="前端工程師，網頁設計，網頁開發，javascript，vue">
+  <title>Xiong-高雄響應式網站前端設計</title>
+  <link rel="shortcut icon" href="https://i.ibb.co/zVg9D8g/xiong-web-Logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- 導航標志 -->
+  <div class="nav_RWDcontainer">
+    <div class="nav_RWDlogo">
+      <a href="#">
+        <img src="https://i.ibb.co/k4578GH/xiong-logo.png" alt="xiong-logo">
+      </a>
+    </div>
+    <a href="javascript:;" class="nav_RWDicon">
+      <i class="fa-solid fa-bars"></i>  
+    </a>
+  </div>
+
+  <!-- 導航欄目 -->
+  <section>
+    <div class="nav_container">
+      <div class="nav_logo">
+        <a href="#">
+          <img src="https://i.ibb.co/k4578GH/xiong-logo.png" alt="xiong-logo">
+        </a>
+      </div>
+      <div class="nav_list">
+        <ul class="nav_item">         
+          <li>
+            <a href="#"  data-name="home" class="nav_active" >
+              <i class="fa-solid fa-feather-pointed"></i>
+              網頁首页</a>
+          </li>
+          <li>
+            <a href="javascript:;" data-name="about">
+              <i class="fa-solid"></i>
+              个人簡介</a>
+          </li>
+          <li>
+            <a href="javascript:;" data-name="skills">
+              <i class="fa-solid"></i>
+              專業技能</a>
+          </li>
+          <li>
+            <a href="javascript:;" data-name="project">
+              <i class="fa-solid"></i>
+              作品合集</a>
+          </li>
+          <li>
+            <a href="javascript:;" data-name="contact">
+              <i class="fa-solid"></i>
+              联系方式</a>
+          </li>
+        </ul>
+      </div>
+  </div> 
+  </section>
+
+  <!-- 發送意見提示 -->
+  <div class="message_container">
+    <span><i class="fa-solid">&nbsp;</i> 信息發送成功</span>
+  </div>
+   
+  <!-- 輪播圖 -->
+   <header>
+    <div class="carousel_container home_container">
+      <div class="carousel_list">
+        <ul class="carousel_item">
+          <li class=" carousel_show">
+            <img src="https://i.ibb.co/D8z2t9D/carousel-16.jpg" alt="carousel-16">
+            <div class="carousel_text">
+              <div class="carousel_title">
+                Hi, <br>
+                I am <span>XIONG</span>
+              </div>
+              <h1>預備轉職，朝前端進擊的小白</h1>
+              <p class="carousel_descp typing">懷著前端的熱情，不斷發掘打扣的樂趣</p>
+              <div class="button-55">
+                <i class="fa-solid fa-paper-plane"></i>
+                <a href="#">個人簡介</a>
+              </div>
+            </div>
+          </li>
+          <li class="">
+            <img src="https://i.ibb.co/DRxqJ9Q/carousel-14.png" alt="carousel-14">
+            <div class="carousel_text">
+            <div class="carousel_title">
+              聽課， <br>
+              <span> 寫code </span>
+              兩不誤
+            </div>
+              <p>與javascript來一場切磋, 用DOM來一場交互</p>
+              <p class="carousel_descp typing">雖然遇到很多技術的問題，但絕不放棄</p>
+              <div class="button-55">
+                <i class="fa-solid fa-paper-plane"></i>
+                <a href="#">專業技能</a>
+              </div>
+            </div>
+          </li>
+          <li>
+            <img src="https://i.ibb.co/gDXzWSh/carou-1.jpg">
+            <div class="carousel_text">
+              <div class="carousel_title">
+                創作， <br>
+                讓創意在作品<span>迸發</span>
+              </div>
+              <p>努力打磨自身的案子，證明自己的能力</p>
+              <p class="carousel_descp typing">通過作品，實踐所學和發揮自己的創意</p>
+              <div class="button-55">
+                <i class="fa-solid fa-paper-plane"></i>
+                <a href="#">作品合集</a>
+              </div>
+            </div>
+          </li>
+        </ul>
+        <div class="carousel_icon">
+          <a href="javascript:;">
+            <i class="fa-solid fa-angle-left"></i>
+          </a>
+          <a href="javascript:;">
+            <i class="fa-solid fa-angle-right"></i>
+          </a>
+        </div>
+        <ul class="carousel_indicator">
+          <li class="carousel_item carousel_active" data-num="1">
+            <a href="javascript:;"></a>
+          </li>
+          <li class="carousel_item" data-num="2">
+            <a href="javascript:;"></a>
+          </li>
+          <li class="carousel_item" data-num="3">
+            <a href="javascript:;"></a>
+          </li>
+        </ul>
+      </div>
+    </div>  
+   </header>
+
+  <!-- 個人統計 -->
+  <section>
+    <div class="common_container count_container">
+      <ul class="count_body">
+        <li>
+          <p class="count_title count1">1</p>
+          <p class="count_descp">部的課程</p>
+          <p>對前端全方位學習</p>
+        </li>
+        <li>
+          <p class="count_title count_2">1</p>
+          <p class="count_descp">個月的課程</p>
+          <p>對各種版型熟悉</p>
+        </li>
+        <li>
+          <p class="count_title count_3">1</p>
+          <p class="count_descp">份作品展現</p>
+          <p>理論實踐最佳化</p>
+        </li>
+        <li>
+          <p class="count_title count_4">1</p>
+          <p class="count_descp">種軟性技能</p>
+          <p>適應前端沒問題</p>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+   <!-- 標題 -->
+   <section>
+    <div class=" caption_container">
+      <div class="caption_header">
+        <span>在尋找前端工程師，為公司增磚添瓦？</span>
+      </div>
+      <div class="caption_body">
+          <p>我是一個埋首于程式間的小白，正在等待招募的機會！</p>
+          <p>除了期許自己可以實現做好網頁的成就感外，</p>
+          <p>也希望能爲公司提供解決方案，以及協助業務成長。</p>
+      </div>
+      <div>
+        <button class="button-55">
+          <i class="fa-solid fa-paper-plane"></i>
+          <a href="#">點擊瞭解</a>  
+        </button>
+      </div>
+    </div>
+   </section>
+
+  <!-- 個人简介 -->
+  <section>
+    <div class="common_container about_container">
+      <div class="common_header about_header">
+        <h2>個人簡介</h2>
+        <p>挑戰未知事物，就是我的代名詞</p>
+      </div>
+      <div class="common_body">
+        <div class="about_text ">
+          <ul class="about_item">
+            <li class="about_active" data-item="1">
+              <i class="fa-solid fa-microscope"></i>
+              <span> &zwnj;過去的我</span>
+            </li>
+            <li data-item="2">
+              <i class="fa-solid fa-computer"></i>
+              <span> &zwnj;現在的我</span>
+            </li>
+            <li data-item="3">
+              <i class="fa-solid fa-file-code"></i>
+              <span> &zwnj;未來的我</span>
+            </li>
+          </ul>
+          <div class="about_cover">
+            <ul class="about_descp">
+            <li class="about_li about_descp_active">
+              <h3>"與coding相遇的契機"</h3>
+              <p>Apa khabar! 我是一名民國85生的馬來西亞人，畢業於成功大學微生物與免疫研究所。</p>
+              <p>在畢業後，我擔任長庚大學的研究助理，主要負責案子的組織染色，顯微鏡拍攝和圖像處理。</p>
+              <p>實驗性質的工作讓我學會自己查找英文期刊和訓練邏輯能力———實驗影響染色結果的機制。把案子呈現給老闆時，應對老闆的提問，培養我有效溝通和隨機應變的能力。</p>
+              <p>使用統計分析軟體時，我對於軟體界面如何與人互動產生很大興趣。在業餘自主學習javascript的知識時，發現coding能帶給我滿足感，特別是解決了bug的時候。</p> 
+              <p>因此，我計劃朝著前端工程之路邁進。</p>  
+            </li>
+             <li class="about_li">
+              <h3>"積極學習，全神貫注"</h3>
+              <p>我的學習路徑是 HTML > CSS > JS > AJAX和API > Vue。</p>
+              <p>在6個月學習的過程中，我一面觀看綫上課程，一面敲代碼。我做了幾個小小的項目驗證我的學習。</p>
+              <p>雖然遇到很多技術的問題，但過去研究所查詢文獻，鎖定問題和過濾信息的能力讓我很快理清問題。也感謝IT邦，medium，stack overflow和github的code友們的慷慨幫助。</p>
+              <p>在準備作品時，其中最大的挑戰是：<br><br>
+                 <span class="highlight_text">使用者點擊注冊后，下一頁應該要切換成注冊，而不是默認的登入頁面。我利用路由跳轉傳參數的方式，讓下一頁根據參數切換成對應頁面。</span>
+              </p>
+              <p>審視現在的自己，其實很喜歡coding的生活，決定換個跑道，加入coding的世界。</p>   
+            </li>
+            <li class="about_li">
+              <h3>"提升效率，成為專業"</h3>
+              <p>進入網絡工程的行業后，我期許是一位注重網頁流暢度，用戶使用體驗和開發效率的前端工程師。</p>
+              <p>我明白自學的知識和業界有段距離。在工作時，希望可以瞭解企業在開發網頁的流程，鞏固自己的知識，培養企業框架開發思維。</p>
+              <p>未來計劃有三：<br>
+                （一）把過去的作品代碼做unit test，刪除冗餘代碼，優化代碼結構。<br><br>
+                （二）整理所學習和業界接觸的知識，以部落格形式整理，理解所學知識點，提升開發效率。<br><br>
+                （三）深入接觸資料結構和演算法相關的知識，提升對程式語言的掌握度。
+              </p>   
+            </li>    
+            </ul>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 個人github -->
+  <div class="common_container git_container">
+    <div class="git_header">
+      <span>我也有github囖！ </span>
+      <p>歡迎加入一起交流。</p>
+    </div>
+    <div class="button-55">
+      <i class="fa-solid fa-paper-plane"></i>
+      <a href="#">個人簡介</a>
+    </div>
+    <div class="git_img">
+      <img src="https://i.ibb.co/N1zb0C3/about-3.png" alt="about-3">
+    </div>
+  </div>
+
+  <!-- 專業技能 -->
+  <section>
+    <div class="common_container skills_container">
+      <div class="common_header">
+        <h2>專業技能</h2>
+        <p>積極學習，深入網絡工程知識</p>
+      </div>
+      <div class="common_body skills_body">
+          <ul>
+            <div class="skills_title">
+            </div>
+            <h3>前端</h3>
+            <li>
+              <div class="skills_img">
+                <img src="https://i.ibb.co/42kS7Qj/js.png" alt="js">
+                <span>JS</span>
+              </div>
+              <div class="skills_icon">
+                <i class="fa-solid fa-battery-three-quarters"></i>
+              </div>
+            </li>
+            <li>
+              <div class="skills_img">
+                <img src="https://i.ibb.co/nDsbKFy/SCSS.webp" alt="SCSS">
+                <span>SCSS</span>
+              </div>
+              <div class="skills_icon">
+                <i class="fa-solid fa-battery-three-quarters"></i>
+              </div>
+            </li>
+            <li>
+              <div class="skills_img">
+                <img src="https://i.ibb.co/j8ZQGgb/bootstrap.jpg" alt="bootstrap">
+                <span>Bootstrap</span>
+              </div>
+              <div class="skills_icon">
+                <i class="fa-solid fa-battery-three-quarters"></i>
+              </div>
+            </li>
+            <li>
+              <div class="skills_img">
+                <img src="https://i.ibb.co/RgmK86F/vue.png" alt="vue">
+                <span>Vue 3</span>
+              </div>
+              <div class="skills_icon">
+                <i class="fa-solid fa-battery-half"></i>
+              </div>
+            </li>
+          </ul>
+          <ul>
+            <div class="skills_title">
+            </div>
+            <h3>后端</h3>
+            <li>
+              <div class="skills_img">
+                <img src="https://i.ibb.co/j62V7Hv/node.png" alt="node">
+                <span>NodeJS</span>
+              </div>
+              <div class="skills_icon">
+                <i class="fa-solid fa-battery-quarter"></i>
+              </div>
+            </li>
+            <li>
+              <div class="skills_img">
+                <img src="https://i.ibb.co/V2qZ3wb/mysql.png" alt="mysql">
+                <span>MySQL</span>
+              </div>
+              <div class="skills_icon">
+                <i class="fa-solid fa-battery-quarter"></i>
+              </div>
+            </li>
+            <li>
+              <div class="skills_img">
+                <img src="https://i.ibb.co/zm5zRv0/express.webp" alt="express">
+                <span>Express</span>
+              </div>
+              <div class="skills_icon">
+                <i class="fa-solid fa-battery-quarter"></i>
+              </div>
+            </li>
+          </ul>
+          <ul>
+            <div class="skills_title">
+            </div>
+            <h3>其他</h3>
+            <li>
+              <div class="skills_img">
+                <img src="https://i.ibb.co/zsrQQBR/webpack.png" alt="webpack">
+                <span>Webpack</span>
+              </div>
+              <div class="skills_icon">
+                <i class="fa-solid fa-battery-quarter"></i>
+              </div>
+            </li>
+            <li>
+              <div class="skills_img">
+                <img src="https://i.ibb.co/5670G0H/git.png" alt="git">
+                <span>Git</span>
+              </div>
+              <div class="skills_icon">
+                <i class="fa-solid fa-battery-half"></i>
+              </div>
+            </li>
+            <li>
+              <div class="skills_img">
+                <img src="https://i.ibb.co/MnCnWQQ/vercel.jpg" alt="vercel">
+                <span>Vercel</span>
+              </div>
+              <div class="skills_icon">
+                <i class="fa-solid fa-battery-half"></i>
+              </div>
+            </li>
+            <li>
+              <div class="skills_img">
+                <img src="https://i.ibb.co/2vsWPty/photoshop.png" alt="photoshop">
+                <span>Photoshop</span>
+              </div>
+              <div class="skills_icon">
+                <i class="fa-solid fa-battery-three-quarters"></i>
+              </div>
+            </li>
+          </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- 軟技能 -->
+  <section>
+    <div class="caption_container soft_container">
+      <div class="caption_header">
+        <span>除了專業技能，
+          <i>軟實力</i>是工作匹配的因素。</span>
+      </div>
+      <div class="caption_body">
+          <p>在過去的工作中，我不斷提升自己的軟實力</p>
+          <p>這樣才可以更加契合工程師的工作。</p>
+      </div>
+      <div>
+      </div>
+    </div>
+   </section>
+
+   <section>
+    <div>
+      <ul class="soft_icon">
+        <div class="soft_icon_item">
+            <i class="fa-solid fa-screwdriver-wrench"></i>
+            <h3>解決問題</h3>
+            <p class="">
+              實驗原料標識不清，導致原料需長時間查找，
+            </p>
+            <p>我訂製了整理計劃，把查找的時間從幾分鐘縮短至幾秒</p>
+        </div>
+        <div class="soft_icon_item">
+          <i class="fa-solid fa-people-group"></i>
+          <h3>團隊協作</h3>
+          <p class="">
+            我接手請了長假同事的工作，分擔該同事部門的負擔
+          </p>
+          <p>雖然是不熟悉的工作，但還是把案子如期完成</p>
+        </div>
+        <div class="soft_icon_item">
+          <i class="fa-solid fa-headset"></i>
+            <h3>聆聽溝通</h3>
+            <p class="">
+              主管的代辦事項，我會聆聽后會復述確認
+            </p>
+            <p>
+              并且跨部門協調結果和其他資訊，都在當天進行回報
+            </p>
+        </div>
+        <div class="soft_icon_item">
+          <i class="fa-solid fa-dumbbell"></i>
+          <h3>持續學習</h3>
+          <p class="">
+            我會閲讀英文的期刊内容，讓實驗的呈現更符合案子的預期。
+          </p>
+          <p>一年參加超過5場的儀器或軟體分析課程</p>
+      </div>
+    </ul>
+    </div>
+   </section>
+
+  <!-- 作品合集 -->
+   <section>
+    <div class="common_container project_container">
+      <div class="common_header">
+        <h2>作品合集</h2>
+        <p>精心製作的網頁，展示所學技術</p>
+      </div>
+      <div class="common_body">
+        <div class="project_item">
+          <div class="project_img">
+            <div class="img_1_container">
+              <img src="https://i.ibb.co/dbfPn17/pic-1.png" alt="pic-1">
+              <div class="img_cover">
+                <h4>成就：</h4>
+                <div class="img_descp">
+                  <p>
+                    <i class="fa-solid fa-circle-check"></i> &nbsp; 采用節流函數偵測倒計數區域的滾動距離
+                  </p> 
+                  <p>
+                    <i class="fa-solid fa-circle-check"> &nbsp; </i> 使用XML發送用戶的表單資料
+                  </p>
+                  <p>
+                    <i class="fa-solid fa-circle-check"> &nbsp; </i> 使用mySQL保存用戶的表單資料
+                  </p>
+                </div>
+                <div class="img_button">
+                  <a href="#">
+                    <i class="fa-brands fa-github"></i>
+                  </a>
+                  <a href="#">
+                    <i class="fa-solid fa-door-open"></i>  
+                  </a>
+                </div>
+              </div>
+            </div>
+            <a href="#">
+              <img src="https://i.ibb.co/znxNGs6/hppic-1.png" class="img_2" alt="hppic-1">
+            </a>
+          </div>
+          <div class="project_descp">
+            <h3 class="project_title">
+              個人網站</h3>
+            <p>這是一個自我介紹的網站，介紹了我基本資料和轉職工程師的準備。 
+            網站（前端）100% 只用CSS和JS建立，不用任何框架，表現出原生JS的掌握度。
+            </p>
+            <p>功能: 表單驗證, 收集用戶意見至數據庫</p>
+            <p>後臺：用NodeJS寫的mySQL數據庫</p>
+            <ul class="project_tag">
+              <li>JS</li>
+              <li>LESS</li>
+              <li>mySQL</li>
+              <li>NodeJS</li>
+              <li>Express</li>
+            </ul>
+          </div>
+        </div>
+        <div class="project_item">
+          <div class="project_img">
+            <div class="img_1_container">
+              <img src="https://i.ibb.co/HKvRZkJ/pic-2.png" alt="pic-2">
+              <div class="img_cover">
+                <h4>成就：</h4>
+                <div class="img_descp">
+                  <p>
+                    <i class="fa-solid fa-circle-check"> &nbsp;</i> 使用 AOS 動態展示頁面
+                  </p>
+                  <p>
+                    <i class="fa-solid fa-circle-check"> &nbsp; </i> 使用本地 localStorage 保存 token ，並渲染用戶資料
+                  </p>
+                  <p>
+                    <i class="fa-solid fa-circle-check"> &nbsp; </i> 提供用戶預覽和更換頭像的功能
+                  </p>
+                </div>
+                <div class="img_button">
+                  <a href="#">
+                    <i class="fa-brands fa-github"></i>
+                  </a>
+                  <a href="#">
+                    <i class="fa-solid fa-door-open"></i>  
+                  </a>
+                </div>
+              </div>
+            </div>
+            <a href="#">
+              <img src="https://i.ibb.co/9c4jQrM/hppic-2.png" class="img_2" alt="hppic-2">
+            </a>
+          </div>
+          <div class="project_descp">
+            <h3 class="project_title">
+              高雄民宿搜索網</h3>
+            <p>作品提供搜索高雄市民宿的功能，著重在用RESTful API串接公開資料平臺。網頁也有注冊和登入的功能，在</p>
+            <p>功能: 搜索表格，表單驗證，會員注冊，更換會員資料 </p>
+            <p>後臺：高雄市城市資料平臺，黑馬程序員學習平臺</p>
+            <ul class="project_tag">
+              <li>JS</li>
+              <li>SCSS</li>
+              <li>Bootstrap</li>
+              <li>Axios</li>
+              <li>JQuery</li>
+            </ul>
+          </div>
+        </div>
+        <div class="project_item">
+          <div class="project_img">
+            <div class="img_1_container">
+              <img src="https://i.ibb.co/z8z27sr/pic-3.png" alt="pic-3">
+              <div class="img_cover">
+                <h4>成就：</h4>
+                <div class="img_descp">
+                  <p>
+                    <i class="fa-solid fa-circle-check"> &nbsp; </i> 商品以滑动特效插件 swiper 進行展示
+                  </p>
+                  <p>
+                    <i class="fa-solid fa-circle-check"> &nbsp; </i> 應用 vue toast 和 sweetalert2 插件提示用戶
+                  </p> 
+                  <p>
+                    <i class="fa-solid fa-circle-check"> &nbsp; </i> 提供複製訂單號碼的服務
+                  </p>
+                  <p>
+                    <i class="fa-solid fa-circle-check"> &nbsp; </i> 使用 Google maps API 設置商家地址
+                  </p>
+                </div>
+                <div class="img_button">
+                  <a href="#">
+                    <i class="fa-brands fa-github"></i>
+                  </a>
+                  <a href="#">
+                    <i class="fa-solid fa-door-open"></i>  
+                  </a>
+                </div>
+              </div>
+            </div>
+            <a href="#">
+              <img src="https://i.ibb.co/hYhHfNt/hppic-3.png" class="img_2" alt="hppic-3">
+            </a>
+          </div>
+          <div class="project_descp">
+            <h3 class="project_title">
+            「寐 . 力」購物網</h3>
+            <p>此作品是用Vue 3 + Bootstrap寫成。作品模擬臥具購物平臺，用vueRouter實現傳參數和跳轉至不同的頁面，並使用pinia管理購物車和訂單資訊。</p>
+            <p>功能: 表單驗證，商品搜索，購物車，結帳系統</p>
+            <p>後臺：用json-server寫的臨時接口</p>
+            <ul class="project_tag">
+              <li>JS</li>
+              <li>SCSS</li>
+              <li>Bootstrap</li>
+              <li>Vue</li>
+              <li>Pinia</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="project_extraInfo">
+        <i class="fa-solid fa-quote-left"></i>
+        <div class="project_extraInfoText">
+          <h3 class="project_extraInfoTitle">悄悄告訴你，<br>這些作品均有. . . . . .</h3>
+          <div class="project_extraInfoItem">
+            <div class="project_extraInfoIcon">
+              <i class="fa-solid fa-desktop"></i>
+              <h4>&ensp;RWD設計</h4>
+              <p>作品可適應320-1040px<br>螢幕尺寸，不會變形</p>
+            </div>
+            <div class="project_extraInfoIcon">
+              <i class="fa-solid fa-ranking-star"></i>
+              <h4>&ensp;SEO優化</h4>
+              <p>html標簽語義化，并且<br>在網頁頭部設立SEO</p>
+            </div>
+            <div class="project_extraInfoIcon">
+              <i class="fa-solid fa-file-zipper"></i>
+              <h4>&ensp;打包壓縮</h4>
+              <p>作品均用webpack打包優化<br>性能，（vue專案用vite）</p>
+            </div>
+          </div>
+        </div>
+       </div>
+    </div>
+   </section>
+
+  <!-- 履歷鏈接 -->
+   <section>
+    <div class="resume_container">
+      <div class="resume_text">
+        <div class="resume_item">
+          <p class="">想對我的作品有更多瞭解？</p>
+          <p>歡迎參考我的resume！</p>
+        </div>
+        <button class="button-55">
+          <i class="fa-solid fa-paper-plane"></i>
+          <a href="#">點擊瞭解</a>  
+        </button>
+      </div>
+      <i class="fa-solid fa-wand-magic"></i>
+      <i class="fa-solid fa-minus"></i>
+    </div>
+   </section>
+
+  <!-- 意見反饋 -->
+   <section>
+    <div class="feedback_container">
+      <div class="feedback_background">
+        <h2 class="common_header">意見反饋</h2>
+        <span>請留下您寶貴的意見，我會儘快與您聯絡</span>
+        <div class="feedback_item">
+          <form action="" class="feedback_form">
+            <div class="feedback_text">
+              <label for="name">
+                <span>
+                  <i class="fa-solid fa-user"> &nbsp;</i>
+                </span>
+                <input type="text" name="name" class="name"  placeholder="請輸入姓名*" data-label="username">
+                <p class="msg"></p>
+              </label>
+              <label for="email">
+                <span>
+                  <i class="fa-duotone fa-solid fa-envelope"> &nbsp;</i>                 
+                </span>
+                <input type="text" name="email" class="email" placeholder="請輸入電子郵件*" data-label="usermail">
+                <p class="msg"></p>
+             </label>
+              <label for="phone">
+                <span>
+                  <i class="fa-solid fa-phone"> &nbsp;</i>        
+                </span>
+                <input type="text" name="phone" class="phone" placeholder="請輸入電話號碼*" data-label="userphone">
+                <p class="msg"></p>
+              </label>
+              <label for="opinion">
+                <span>
+                  <i class="fa-solid fa-comments"> &zwnj;</i>
+                </span>
+                <textarea name="opinion" class="opinion" rows="1"  id="" oninput='this.style.height = "";this.style.height = this.scrollHeight + "px"' placeholder="請輸入留言"></textarea>
+                <p class="msg"></p>
+              </label>
+            </div>
+            <p class="feedback_reminder">*為必填項目</p>
+            <button class="button-55 btn_feedback submit" type="submit">
+              <i class="fa-solid fa-paper-plane"></i>
+              <a href="javascript:;">送出</a>  
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+   </section>
+
+  <!-- 聯繫方式 -->
+   <footer>
+    <div class="contact_container">
+      <div class="contact_item">
+        <a href="#">
+          <img src="https://i.ibb.co/k4578GH/xiong-logo.png" alt="xiong-logo">
+        </a>
+        <ul class="contact_descp">
+          <li>
+            <a href="#">
+              <i class="fa-brands fa-linkedin"></i>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="fa-brands fa-square-github"></i>
+            </a>
+          </li>
+          <li>
+            <a href="mailto:wooiseongseong96@gmail.com">
+              <i class="fa-solid fa-square-envelope"></i>
+            </a>
+          </li>
+          <li>
+            <a href="tel:+886-9-33227002">
+              <i class="fa-solid fa-square-phone"></i>
+            </a>
+          </li>
+        </ul>
+        <span>Copyright © 2024 Xiong's here project.All rights reserved.</span>
+      </div>
+    </div>
+   </footer>
+   <script src="https://kit.fontawesome.com/a9067f094c.js" crossorigin="anonymous"></script>
+   <script src="./index.js"></script>
+</body>
+</html>

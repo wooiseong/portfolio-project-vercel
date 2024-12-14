@@ -1,0 +1,197 @@
+//out : false
+@vw: 3.75vw;
+
+.font-style ( @max:1.2rem, @font-weight: 400, @font-family:" zen Maru Gothic", 
+  @color: #000) {
+  @font-cal: clamp(@max*0.8, 1.5vw, @max);
+  font-size: @font-cal;
+  font-weight: @font-weight;
+  font-family: @font-family;
+  color: @color;
+}
+
+h1 {
+  .font-style(2.8rem,700);
+}
+
+//導航標志
+.nav_RWDcontainer {
+  display: flex;
+}
+
+//導航欄目
+.nav_container {
+  top: 8%;
+  opacity: 0;
+  height: 50./@vw;
+  border: 2px solid #000;
+  transition: all 0.5s;
+  animation: navBar_show 1s 1s forwards linear;
+  .nav_logo {
+    display: none;
+  }
+  .nav_item {
+    flex-wrap: wrap;
+    a {
+      .font-style(1.3rem);
+      &:hover {
+        .font-style(1.3rem,@font-weight: 700,@color:#fff) ;
+      }
+    }
+  }
+}
+.navBar_show {
+  animation: slide_down 0.4s forwards linear;
+}
+.nav_active {
+  .font-style(1.5rem,@font-weight: 700)
+}
+
+//輪播圖
+.carousel_list {
+  height: 470./@vw;
+  .carousel_text {
+    text-align: center;
+    .carousel_title {
+      .font-style ( 3.8rem,900,'Lato') !important;
+    }
+  }
+}
+
+// 打字效果
+.typing {
+  margin: 30./@vw 0  70./@vw  0 ;
+}
+@keyframes slide_down {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+//個人統計
+.count_container {
+  padding: 10./@vw;
+  .count_body {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    li {
+      flex: none;
+      padding: 0 10./@vw;
+      &:nth-child(-n+3) {
+        &::after{
+          border-right: 0;
+        }
+      }
+    }
+    .count_title{
+      .font-style(5rem, 900, 'Noto Sans TC', #018749);
+      line-height: 12./@vw
+    }
+    .count_descp {
+      .font-style(2rem);
+      font-weight: 700;
+      line-height: 0;
+    }
+  }
+}
+
+//個人簡介
+.about_item {
+  li {
+    flex: 1;
+    padding: 4./@vw;
+    border-radius: 5./@vw 5./@vw 0 0;
+    .font-style(1.5rem,@color: #fff);
+    background-color: #000;
+    transition: all 0.3s;
+    cursor: pointer;
+    &:hover {
+        background-color: #D0D0D0;
+        color: #000;
+    }
+    .fa-solid {
+      display: none;
+    }
+  }
+}
+
+//專業技能
+.skills_container {
+  .skills_body {
+    height: 350./@vw !important;
+    justify-content: space-around !important;
+    .skills_title {
+      border-width: 80./@vw 80./@vw 0 0 !important;
+    }
+    h3 {
+      .font-style( 1.15rem, 500, "Zen Maru Gothic",@color:#fff) !important;
+    }
+    .skills_img {
+      width: 40./@vw !important;
+      height: 40./@vw !important;
+      span {
+        .font-style(1rem, 500,"zen maru gothic", @color: #fff);
+      } 
+    }
+  } 
+}
+
+// 作品合集
+.project_item {
+  margin-bottom: 60./@vw;
+}
+.project_img{
+  width: 100%;
+  margin:0 auto;
+  .img_1_container {
+      .img_cover {
+        width: 100%;
+        height: 100%;
+        overflow-y: auto ;
+        h4 {
+          line-height: 0./@vw;
+        }
+      .img_button {
+        margin-top: 0./@vw;
+        a {
+        .font-style(2rem, @color:#fff);
+         padding: 4./@vw;
+          &:hover {
+          .font-style(2rem, @color:#018749);
+          }
+        }
+      }
+    }  
+  }
+  .img_2 {
+    display: none;
+  }
+}
+
+//意見反饋
+.feedback_background{
+    .feedback_item {
+      .feedback_text {
+        flex-direction: column;
+      }
+      input, textarea {
+        width: 150./@vw !important;
+      }
+    }
+  }
+
+//聯係方式
+.contact_container {
+  .contact_item {
+    img {
+      width: 30%;
+    }
+  }
+  .contact_descp {
+    width: 50%;  
+  }
+}

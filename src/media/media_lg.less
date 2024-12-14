@@ -1,0 +1,78 @@
+//out : false
+
+@vw: 3.75vw;
+
+.font-style ( @max:1.2rem, @font-weight: 400, @font-family:" zen Maru Gothic", 
+  @color: #000) {
+  @font-cal: clamp(@max*0.8, 1.5vw, @max);
+  font-size: @font-cal;
+  font-weight: @font-weight;
+  font-family: @font-family;
+  color: @color;
+}
+
+//輪播圖
+.carousel_list {
+  height: 270./@vw;
+  .carousel_indicator {
+    bottom: 12%;
+  }
+}
+.typing {
+  .font-style(1.8rem, 400,"zen maru gothic");
+}
+
+//個人簡介
+.about_container {
+  .about_text {
+    width: 100%
+  }
+}
+
+//專業技能
+.skills_container {
+  .skills_icon {
+    .font-style(3.5rem) !important;
+  }
+}
+
+//作品合集
+.project_item {
+  margin-bottom: 40./@vw;
+  padding: 0;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.project_img{
+  width: 80%;
+  margin-right: 40./@vw; 
+  .img_1_container {
+    .font-style(1.3rem, 500, @color: #fff);
+    .img_cover {
+      .img_button {
+        margin-top: 10./@vw;
+        a {
+          padding: 2./@vw;
+          .font-style(2rem, @color:#fff);
+          &:hover {
+            .font-style(2rem, @color:#018749);
+          }
+        }
+      }
+    } 
+
+  }
+}
+.project_descp {
+  flex: 1;
+  padding: 10./@vw 10./@vw 10./@vw 0./@vw;
+  .project_tag {
+    justify-content: space-around;
+  }
+}
+
+// 意見反饋
+.feedback_container {
+  width: 70%;
+}

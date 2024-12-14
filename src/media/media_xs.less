@@ -1,0 +1,69 @@
+//out : false
+@vw: 3.75vw;
+
+.font-style ( @max:1.2rem, @font-weight: 400, @font-family:" zen Maru Gothic", 
+  @color: #000) {
+  @font-cal: clamp(@max*0.8, 1.5vw, @max);
+  font-size: @font-cal;
+  font-weight: @font-weight;
+  font-family: @font-family;
+  color: @color;
+}
+
+//導航欄目
+.nav_container {
+  height: 70./@vw;
+}
+
+//輪播圖
+.carousel_list {
+  height: 630./@vw;
+}
+
+// 打字效果
+.typing {
+  margin: 30./@vw 0  100./@vw  0 ;
+}
+
+//專業技能
+.skills_container {
+  .skills_body {
+    height: 350./@vw !important;
+    justify-content: space-around !important;
+    h3 {
+      .font-style( 1rem, 500, "Zen Maru Gothic",@color:#fff) !important;
+    }
+    .skills_icon {
+      .font-style(2.5rem) !important;
+    }
+  } 
+}
+
+// 作品合集
+.project_img{
+  .img_1_container {
+    .font-style(1.05rem, 500, @color: #fff);
+    .img_cover {
+      .img_button {
+        margin-top: 0./@vw;
+        a {
+          padding: 2./@vw;
+          .font-style(1.5rem, @color:#fff);
+          &:hover {
+            .font-style(1.5rem, @color:#018749);
+          }
+        }
+      }
+    } 
+  }
+}
+
+//意見反饋
+.feedback_container {
+  width: 90%;
+  .feedback_item {
+    input, textarea {
+      width: 400./@vw;
+    }
+  }
+}

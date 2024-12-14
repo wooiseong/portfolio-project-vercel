@@ -1,0 +1,168 @@
+//out : false
+@vw: 3.75vw;
+
+.font-style ( @max:1.2rem, @font-weight: 400, @font-family:" zen Maru Gothic", 
+  @color: #000) {
+  @font-cal: clamp(@max*0.8, 1.5vw, @max);
+  font-size: @font-cal;
+  font-weight: @font-weight;
+  font-family: @font-family;
+  color: @color;
+}
+
+h1 {
+  .font-style(2.5rem,700);
+}
+
+// 按鈕樣式
+.button-55 {
+  font-size: 1rem;
+}
+
+//導航欄目
+.nav_container {
+  height: 30./@vw;
+  .nav_logo {
+    width: 13%;
+  }
+}
+
+//輪播圖
+.carousel_list {
+  height: 300./@vw;
+  img {
+    object-fit: none;
+  }
+  .carousel_indicator {
+    opacity: 0;
+  }
+  .carousel_text {
+    margin: 60./@vw 0 0 40./@vw;
+    .carousel_title {
+      .font-style ( 4.2rem,900,'Lato') !important;
+      padding-top: 15./@vw;
+    }
+  }
+}
+
+// 打字效果
+.typing {
+  margin: 30./@vw 0;
+  width: 100%;
+  border-right: 0px;
+  word-break: break-all;
+  overflow: visible;
+  .font-style(2rem,400, "zen maru gothic");
+}
+@keyframes typing {
+  from {
+      width: 100%;
+  }
+  to {
+      width: 100%;
+  }
+}
+
+//個人統計
+.count_container {
+  .count_descp {
+    .font-style(1.5rem, 700)!important;
+  } 
+}
+
+//個人git
+.git_container {
+  text-align: center;
+  padding-bottom: 30./@vw;
+  .git_img {
+    display: none
+  }
+}
+
+// 專業技能
+.skills_container {
+  .skills_body {
+    height: 220./@vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    ul {
+      .skills_title {
+        border-width: 50./@vw 50./@vw 0 0;
+      }
+      h3 {
+        position: absolute;
+        top: 0%;
+        left: 0.5%;
+        transform: rotate(-45deg);
+        .font-style( 1.5rem, 500, "Zen Maru Gothic",@color:#fff);
+      }
+      .skills_img {
+        width: 25./@vw;
+        height: 25./@vw;
+        span {
+          .font-style(1rem, 500,"zen maru gothic", @color: #fff);
+        }
+      }
+      .skills_icon {
+        .font-style(5rem);
+      }
+    }
+  }
+}
+
+//軟技能
+.soft_icon {
+  .soft_icon_item {
+    overflow: visible;
+    &::after {
+      display: none;
+    }
+  }
+}
+
+// 作品合集
+.project_img{
+  .img_1_container {
+    .font-style(1.2rem, 500, @color: #fff);
+    .img_cover {
+      .img_button {
+        margin-top: 0./@vw;
+        a {
+          .font-style(2.5rem, @color:#fff);
+          &:hover {
+          .font-style(2.5rem, @color:#018749);
+          }
+        }
+      }
+    } 
+
+  }
+}
+
+//檔案
+.resume_container {
+  border: 4./@vw solid #000;
+  .resume_text {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 8./@vw 10./@vw 25./@vw  10./@vw;
+  }
+  .fa-wand-magic {
+    position: absolute;
+    bottom: 10%;
+    left: 7%;
+    font-size: 15./@vw;
+  }
+  .fa-minus {
+    position: absolute;
+    bottom: 1%;
+    left: 1%;
+    font-size: 35./@vw;
+    line-height: 0;
+    color: 	#8E8E8E;
+  }
+}
+

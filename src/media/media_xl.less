@@ -1,0 +1,883 @@
+//out : false
+
+// 公共mixin
+@vw: 3.75vw;
+
+.font-style ( @max:1.2rem, @font-weight: 400, @font-family:" zen Maru Gothic", 
+  @color: #000) {
+  @font-cal: clamp(@max*0.8, 1.5vw, @max);
+  font-size: @font-cal;
+  font-weight: @font-weight;
+  font-family: @font-family;
+  color: @color;
+}
+
+// 公共樣式
+* {
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+body,ul {
+  margin: 0;
+  padding: 0;
+  .font-style;
+  font-family: 'Noto Sans TC';
+}
+a {
+  .font-style;
+}
+h1 {
+  .font-style(3rem,700);
+}
+h2{
+  .font-style(3rem,700);
+  text-shadow:2px 3px 6px #BEBEBE;
+  line-height: 0;
+}
+h3 {
+  .font-style( 2rem, 500, "Zen Maru Gothic");
+}
+h4 {
+  line-height: 2./@vw;
+}
+
+// 按鈕樣式
+.button-55 {
+  align-self: center;
+  background-color: #fff;
+  background-position: 0 90%;
+  background-size: 0.25rem 0.19rem;
+  border-radius: 0.94rem 14.1rem 16rem 0.94rem 0.94rem 16rem 14.1rem 0.94rem;
+  border-style: solid;
+  box-shadow: rgba(0, 0, 0, .5) 0.94rem 1.75rem 1.6rem -1.125rem;
+  box-sizing: border-box;
+  cursor: pointer;
+  display: inline-block;
+  line-height: 1.44rem;
+  outline: none;
+  padding: 5.5./@vw;
+  transition: all 235ms ease-in-out;
+  border-bottom-left-radius: 0.94rem 14.1rem;
+  border-bottom-right-radius: 14.1rem 0.94rem;
+  border-top-left-radius: 16rem 0.94rem;
+  border-top-right-radius: 0.94rem 14.1rem;
+  font-size: 1.5rem;
+}
+.button-55:hover {
+  box-shadow: rgba(0, 0, 0, .3) 0.125rem 0.5rem 0.5rem -0.3rem;
+  transform: translate3d(0, 0.125rem, 0);
+  .fa-solid{
+    color: #009100;
+  }
+  a {
+    color: 	#009100;
+    font-weight: 700;
+  }
+}
+.button-55:focus {
+  box-shadow: rgba(0, 0, 0, .3) 0.125rem 0.5rem 0.25rem -0.375rem;
+}
+.button-55:active {
+  box-shadow: rgba(0, 0, 0, .7) 0.94rem 1.75rem 1.6rem -1.125rem;
+
+}
+
+// 盒子样式
+.common_container {
+  width: 100%;
+  padding: 20./@vw;
+  text-align: center;
+}
+
+//導航標志
+.nav_RWDcontainer {
+  display:none;
+  margin: 4./@vw 9./@vw;
+  position: fixed;
+  width: 95%;
+  // display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  z-index: 100;
+  .nav_RWDlogo img{
+    width: 32%;
+  }
+  .nav_RWDicon {
+    .font-style(2rem, @color: #fff);
+    background-color: #000;
+    padding: 3./@vw 4./@vw;
+    border-radius: 4./@vw;
+  }
+}
+
+//導航欄目
+.nav_container {
+  display: flex;
+  position: fixed;
+  z-index: 3;
+  width: 95%;
+  height: 20./@vw;
+  border-radius: 2./@vw;
+  margin: 2./@vw 9./@vw;
+  background-color: rgba(0, 0, 0, 0.3);
+  transition: all 0.8s;
+  .nav_logo {
+    width: 10%;
+    height: auto;
+    position: relative;
+    img {
+      position: absolute;
+      top: 50%;
+      left: 0;
+      translate: 20% -50%;
+      width: 100%;
+    }
+  }
+  .nav_list {
+    width: 100%;
+    .nav_item {
+      height: 100%;
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+      a {
+        color: #fff;
+        &:hover {
+          .font-style(@font-weight: 700, @color:#fff)
+        }
+        
+      }
+    }
+  }
+}
+.nav_active {
+  .font-style(@font-weight: 700)
+}
+
+//發送意見提示
+.message_container {
+  margin-top: 25./@vw;
+  width: 50%;
+  padding: 5./@vw;
+  position: fixed;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  z-index: 1000;
+  border: 0.5./@vw solid;
+  border-radius: 10./@vw;
+  display: none;
+  animation: showup 4s forwards;
+}
+@keyframes showup {
+  0% {
+    opacity: 0;
+  }
+  20% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+// 輪播圖
+.carousel_list {
+  position: relative;
+  height: 190./@vw;
+  .carousel_item {
+    display: flex;
+    overflow: hidden;
+    li {
+      display: none;
+      img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -2;
+      }
+      .carousel_text {
+        margin: 30./@vw 30./@vw 0 40./@vw;
+        .carousel_title {
+          .font-style ( 5rem,900,'Lato');
+          span {
+            color: 	#00DB00
+          }
+        }
+        .carousel_subtitle {
+          .font-style(2rem, 700,"zen maru gothic");
+        }
+      }
+      .button-55 {
+        margin-bottom: 30./@vw;
+      }
+    }
+  }
+  .carousel_indicator {
+    position: absolute;
+    bottom: 4%;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: space-between;
+      .carousel_item {
+        margin: 0 2./@vw;
+        background-color: #000;
+        opacity: 0.2;
+        padding: 0.75./@vw 5./@vw;
+        transition: all 0.5s;
+        cursor: pointer;
+        &:hover {
+          opacity: 1;
+        }
+      }
+    }
+}
+.carousel_icon a {
+  .font-style(3rem);
+  transition: all 0.5s;
+  opacity: 0.1;
+  &:hover {
+    opacity: 1;
+  }
+}
+.fa-angle-left {
+  position: absolute;
+  top: 50%;
+  left: 0%;
+  padding-left: 1%;
+}
+.fa-angle-right {
+  position: absolute;
+  top: 50%;
+  right: 0%;
+  padding-right: 1%;
+}
+.carousel_active {
+  opacity: 1 !important; 
+}
+.carousel_show {
+  display: block !important;
+}
+
+// 打字效果
+.typing {
+  margin: 15./@vw 0 ;
+  padding: 0 0 13./@vw 0 ;
+  width: 18.5em;
+  height: 10./@vw;
+  border-right: 1px solid transparent;
+  animation: typing 1s steps(42, end), blink-caret .5s step-end infinite;
+  word-break: break-all;
+  overflow: hidden;
+  .font-style(2rem, 400,"zen maru gothic");
+}
+// 打字動畫
+@keyframes typing {
+  from {
+      width: 0;
+  }
+  to {
+      width: 18.5em;
+  }
+}
+// 光标動畫
+@keyframes blink-caret {
+  from,
+  to {
+      border-color: transparent;
+  }
+  50% {
+      border-color: currentColor;
+  }
+}
+
+//個人統計
+.count_container {
+  padding: 10./@vw;
+  .count_body {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    li {
+      flex: 1;
+      &:nth-child(-n+3) {
+        position: relative;
+        &::after{
+          content: '';
+          position: absolute;
+          top: 50%;
+          right: 0;
+          transform: translateY(-50%);
+          width: 100%;
+          height: 40%;
+          border-right: 0.5./@vw solid #BEBEBE;
+        }
+      }
+    }
+    .count_title{
+      .font-style(5rem, 900, 'Noto Sans TC', #018749);
+      line-height: 12./@vw
+  
+    }
+    .count_descp {
+      .font-style(2rem);
+      font-weight: 700;
+      line-height: 0;
+    }
+  }
+}
+.caption_container {
+  background-color: 	#01B468;
+  text-align: center;
+  padding: 20./@vw 0;
+  color: #fff;
+  word-break: break-all;
+  .caption_header {
+    .font-style(3rem, 700, 'zen maru gothic',#fff);
+    margin-bottom: 5./@vw;
+  }
+  .caption_body {
+    margin-bottom: 10./@vw;
+  }
+}
+
+// 個人簡介
+.about_container {
+  .about_text {
+    width: 90%;
+    margin: 0 auto;
+    .about_item {
+      display: flex;
+      border-radius: 5./@vw 5./@vw 0 0;
+      width: 100%;
+      li {
+        flex: 1;
+        padding: 4./@vw;
+        border-radius: 5./@vw 5./@vw 0 0;
+        .font-style(1.5rem,700, @color: #fff);
+        background-color: #000;
+        transition: all 0.3s;
+        cursor: pointer;
+        &:hover {
+            background-color: #D0D0D0;
+            color: #000;
+        }
+      }
+    }
+    .about_cover {
+      position: relative;
+      padding: 10./@vw;
+      background-color:#D0D0D0;
+      .about_indicator {
+        position: absolute;
+        top: 2%;
+        left: 0;
+        display: flex;
+        li {
+          width: 4./@vw;
+          height: 4./@vw;
+          border-radius: 8./@vw;
+          margin-left: 10./@vw;
+          background-color: #fff;
+          &:nth-child(1){
+            background-color: #FF5151;	
+          }
+          &:nth-child(2){
+            background-color:		#FFD306;
+          }
+          &:nth-child(3){
+            background-color:	#00EC00;
+          }
+        }
+      }
+    }
+    .about_descp {
+      .about_li {
+          display: none;
+          background-color:		#fff;
+          padding: 3./@vw 18./@vw;
+          border-radius: 1.5./@vw ;
+          box-shadow: inset rgba(0, 0, 0, 0.12) 0px 1px 3px, inset rgba(0, 0, 0, 0.24) 0px 1px 2px;
+          .highlight_text {
+            display: inline-block;
+            border-left: 5px solid #FF5151 !important;
+            padding: 5./@vw !important;
+            background-color: 	#FFD2D2 !important;
+          }
+        }
+      h3 {
+        padding-bottom: 5./@vw;
+        border-bottom: 3px solid #000;
+      }
+      p {
+        text-align: left;
+      }
+    }
+  } 
+}
+.about_active {
+  background-color: #D0D0D0 !important;
+  color: #000 !important;
+}
+.about_descp_active {
+  display: block !important;
+}
+
+//個人git
+.git_container {
+  background-color: 	#01B468;
+  text-align: left;
+  padding: 25./@vw 50./@vw;
+  width: 100%;
+  position: relative;
+  .git_header {
+    .font-style(2.5rem, 400 ,@color:#fff);
+  }
+  .git_img {
+    width: 50%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    img {
+      width: 100%;
+    }
+  }
+}
+
+//專業技能
+.skills_container {
+  .skills_body {
+    height: 220./@vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    ul {
+      position: relative;
+      background-color: 	#fff;
+      width: 100%;
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+      padding: 5./@vw;
+      flex-wrap: wrap;
+      box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+      .skills_title {
+        position: absolute;
+        top: 0;
+        left: 0;
+        border-color: #000 transparent transparent transparent;
+        border-style: solid solid solid solid;
+        border-width: 45./@vw 45./@vw 0px 0px;
+        height: 0;
+        width: 0;
+      }
+      h3 {
+        position: absolute;
+        top: 0%;
+        left: 0.5%;
+        transform: rotate(-45deg);
+        .font-style( 2rem, 500, "Zen Maru Gothic",@color:#fff);
+      }
+      li {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        .skills_img {
+          position: relative;
+          border-radius: 2./@vw;
+          width: 30./@vw;
+          height: 30./@vw;
+          transition: all 0.3s;
+          cursor: pointer;
+          img {
+            width: 100%;
+            height: 100%;
+            border-radius: 2./@vw;
+          }
+          span {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top:0% ;
+            left: 0%;
+            opacity: 0;
+            word-break: break-all;
+            border-radius: 2./@vw;
+            background-color: rgba(0, 0, 0, .6);
+            .font-style(1rem, 500,"zen maru gothic", @color: #fff);
+          } 
+        }
+        .skills_icon {
+          .font-style(5rem);
+          transition: all 0.2s;
+        }
+        &:hover {
+          .skills_img{
+            transform: scale(1.1);
+            box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+          }
+          span {
+            opacity: 1;
+          }
+          .skills_icon {
+            .font-style(5rem,@color: 	#01B468);
+          }
+        }  
+      }
+      
+    }
+  }
+}
+
+//軟技能
+.soft_container {
+  background-color:	#3c3c3c; 
+  i{
+    .font-style( 3rem, 700, "Zen Maru Gothic", 	#79FF79);
+    font-style: normal;
+  }
+}
+.soft_icon {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  .soft_icon_item {
+    flex: 1;
+    padding: 10./@vw;
+    .font-style(1.2rem, 500, @color: #fff);
+    transition: all 0.5s;
+    overflow: hidden;
+    position: relative;
+    &::after {
+      content: '';
+      position: absolute;
+      top: 0px;
+      left: -50%;
+      background: white;
+      width: 50%;
+      height: 200%;
+      opacity: 20%;
+      transform: skewX(20deg);
+    }
+    &:hover::after {
+      left: 200%;
+      transition: all 2s cubic-bezier(0.3, 1, 0.2, 1);
+    }
+    h3 {
+      .font-style( 2rem, 500, "Zen Maru Gothic", #fff);
+    }
+    i {
+      font-size: 8rem;
+      color: #fff;
+    }
+    &:nth-child(1){
+      background-color:		#FF8040;
+    }
+    &:nth-child(2){
+      background-color: 	#2828FF;	
+    }
+    &:nth-child(3){
+      background-color: #D9006C;
+    }
+    &:nth-child(4){
+      background-color:	#5B00AE;
+    }
+  }
+}
+
+// 作品合集
+.project_item {
+  margin-bottom: 15./@vw;
+  padding: 10./@vw 0  10./@vw 0;
+  display: flex;
+  justify-content: space-between;
+  text-align: left;
+}
+.project_img{
+  width: 50%;
+  display: flex;
+  position: relative;
+  border: 1px solid #000;
+  border-radius: 2./@vw;
+  .img_1_container {
+    position: relative;
+    overflow: hidden;
+    border-radius: 2./@vw;
+    .img_cover {
+      position: relative;
+      border: 1px solid #000;
+      background-color: rgba(0, 0, 0, .6);
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      bottom: -100%;
+      left: 0;
+      border-radius: 2./@vw;
+      transition: all 1.0s;
+      z-index: 2;
+      padding: 5./@vw 10./@vw;
+      opacity: 0;
+      .font-style( @color: #fff, @font-family: 'Noto Sans TC');
+      h4 {
+        line-height: 0;
+      }
+      .img_button {
+        margin-top: 5./@vw;
+        display: flex;
+        justify-content: space-between;
+        a {
+          background-color: #018749;
+          border-radius: 5.5./@vw;
+          padding: 2./@vw;
+          .font-style(2rem, @color:#fff);
+          &:hover {
+            .font-style(2rem, @color:#018749);
+            background-color: #fff;
+          }
+        }
+      }
+    } 
+    img {
+      width: 100%;
+      height: 100%;
+      box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    }
+    &:hover {
+      box-shadow: rgba(11, 218, 11, 1) 0px 5px 15px;
+      .img_cover {
+        bottom: 0%;
+        opacity: 1;
+      }
+    }
+  }
+  .img_2 {
+    background-color: #000;
+    padding: 1.5./@vw;
+    border-radius: 2./@vw ;
+    width: 23%;
+    position: absolute;
+    bottom: 1%;
+    right: -15%;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+    &:hover {
+      animation: phone-shaking 1s infinite;
+      background-color: #4CBB17;
+    }
+  }
+}
+// 手機抖動動畫
+@keyframes phone-shaking{
+  0% { transform: skewY(-5deg); }
+  5% { transform: skewY(5deg); }
+  10% { transform: skewY(-5deg); }
+  15% { transform: skewY(5deg); }
+  20% { transform: skewY(0deg); }
+  100% { transform: skewY(0deg); }
+ }
+.project_descp {
+  flex: 1;
+  margin-left: 20./@vw;
+  padding-left: 15./@vw;
+  text-align: left;
+  .project_title {
+    line-height: 2./@vw;
+    .font-style(2rem, 700,"Lato")
+  }
+  .fa-circle-check {
+    display: block;
+  }
+  .project_tag {
+    margin-top: 15./@vw;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    li {
+      padding: 1./@vw 2.5./@vw;
+      border-radius: 4./@vw;
+      background-color: #018749;
+      .font-style(1.1rem, 700,"zen maru gothic",#fff);
+    }
+  }
+}
+.project_extraInfo {
+  background-color: #f8f8f8;
+  padding: 15./@vw 15./@vw 20./@vw;
+  text-align: left !important;
+  .fa-quote-left {
+    text-align: left;
+    font-size: 2rem;
+  }
+  .project_extraInfoText {
+    border-left: 2px solid #000;
+    margin-left: 3.5./@vw;
+    .project_extraInfoTitle {
+      margin-left: 10./@vw ; 
+      margin-top: 0;
+      .font-style(3rem, 700,"Lato");
+    }
+    .project_extraInfoItem {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      .project_extraInfoIcon {
+        color: 	#9e9e9e;
+        margin: 5./@vw 0; 
+        padding: 10./@vw;
+        border: 1px solid #e0e0e0;
+        background-color: #ffffff;
+        transition: all 0.5s;
+        .fa-solid {
+          font-size: 3.5rem;
+          color: #9e9e9e;
+        }
+        h4 {
+          .font-style(2rem, 700, @color: #9e9e9e);
+          display: inline;
+        }
+        &:hover {
+          color: #000;
+          border: 2px solid #018749;
+          box-shadow: 4px 4px 16px rgba(0, 0, 0, 0.3);
+          scale: 1.15;
+          .fa-solid {
+            color: #018749;
+          }
+          h4 {
+            color: #000;
+          }
+        }
+      }
+    }
+  }
+}
+
+// 履歷鏈接
+.resume_container {
+  position: relative;
+  width: 70%;
+  margin: 20./@vw auto 40./@vw;
+  border: 3./@vw solid #000;
+  background-color: #018749;
+  .font-style(2.25rem, 500, "zen maru gothic",#fff);
+  .resume_text {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 5./@vw;
+  }
+  .fa-wand-magic {
+    position: absolute;
+    bottom: 10%;
+    left: 7%;
+    font-size: 8./@vw;
+  }
+  .fa-minus {
+    position: absolute;
+    bottom: 1%;
+    left: 1%;
+    font-size: 20./@vw;
+    line-height: 0;
+    color: 	#8E8E8E;
+  }
+}
+
+//意見反饋
+.feedback_container {
+  background-image: url("https://i.ibb.co/QrV94Zq/feedback-6.png");
+  background-attachment: fixed;
+  background-size: cover;
+  min-width: 100%;
+  .font-style(@color:#fff);
+  padding: 20./@vw 0;
+  h2 {
+    .font-style(3rem,700, @color:#fff);
+  }
+  .feedback_background{
+    width: 70%;
+    margin: 0  auto;
+    text-align: center;
+    .feedback_item {
+      background-color: rgba(255, 255, 255, 0.9);
+      padding: 10./@vw 15./@vw;
+      .feedback_text {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+      }
+      input, textarea {
+        width: 90./@vw;
+        outline: none;
+        border: none;
+        border-bottom: 0.5./@vw solid	#ADADAD;
+        resize: none;
+        transition: all 0.2s;
+        margin-top: 22./@vw;
+        overflow-y: hidden;
+        .font-style();
+        background-color: transparent;
+        &:focus {
+          border: none;
+          border-bottom: 0.5./@vw solid 	#00BB00;
+          background-color: 	#F0FFF0;
+        }
+        &::placeholder {
+          .font-style(1rem, @color:	#7B7B7B);
+        }
+      }
+      span {
+        .font-style(1.8rem,@color:	#00BB00);
+      }
+      .msg {
+        .font-style(1rem,@color:red);
+      }
+    }
+    .feedback_reminder {
+      margin-top: 10./@vw;
+      .font-style(1rem,@color:#000);
+      text-align: left;
+    }
+  }
+}
+
+//聯係方式
+.contact_container {
+  width: 100%;
+  padding: 13./@vw;
+  background-color:	#01B468;
+  text-align: center;
+  .contact_item {
+    img {
+      width: 16%;
+      border: 2px solid #fff;
+    }
+  }
+  .contact_descp {
+    width: 30%;
+    margin: 5./@vw auto;
+    display: flex;
+    justify-content: space-evenly;
+    li {
+      a {
+      .font-style(3rem, @color:#fff);
+    }
+      transition: all 0.3s;
+      &:hover {
+        transform: scale(1.4);
+      }
+    }
+  }
+}
+
