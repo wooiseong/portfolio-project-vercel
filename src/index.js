@@ -333,6 +333,7 @@ function feedback() {
 
     container.addEventListener("animationend", () => {
       container.style.display = 'none'
+      form.reset()
     });
   }).catch(error => {
     console.dir(error)
