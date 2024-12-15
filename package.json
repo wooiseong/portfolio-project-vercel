@@ -29,6 +29,7 @@
     "webpack-dev-server": "^5.1.0"
   },
   "dependencies": {
+    "cross-env": "^7.0.3",
     "less-loader": "^12.2.0"
   }
 }
