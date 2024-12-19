@@ -37,9 +37,9 @@ You can click on this link to view more pictures :point_right::point_right::poin
 ## Bugs/Future plans
 1. When the viewport is under 576px, the navigation bar is replaced with a toggler. The bar is displayed when the toggler is clicked. On vercel, the toggler is malfunctioned. The toggler functions properly when the website is built locally.
 
-2. Due to budget constraint, I do not apply for MySQL hosting. The feedback cannot be stored in mySql database. I wrote a simple response in nodeJS. You can refer <a href="https://github.com/wooiseong/portfolio-backend-on-vercel">portfolio-backend-on-vercel</a>
+2. Due to budget constraint, I do not apply for MySQL hosting. The feedback cannot be stored in mySql database. I wrote a simple response in nodeJS. You can refer to <a href="https://github.com/wooiseong/portfolio-backend-on-vercel">portfolio-backend-on-vercel</a>
 
-For 
+For nodeJS file connected to local mySQL database:  <a href="https://github.com/wooiseong/portfolio-nodeJS-mySql">portfolio-nodeJS-mySql</a>
 
 ## Installation
 Please follow the instructions to get a copy of this project.
