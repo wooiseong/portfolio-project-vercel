@@ -1,6 +1,6 @@
 # portfolio- Xiong's here ! :wave:	
 
-Thus is a website where you can search hostels located in Kaohsiung, Taiwan. Moreover, you can register a new account and login to upload your profile picture and change your password.
+Want to know about me? This website contains my personal information, including my preparation to be a frontend enginner. It is built with CSS and Javascript,without any framework or plugins (frontend part).  
 
 Demo here :point_down: <p></p>
 <a href="https://vercel.com/wooiseongs-projects/portfolio-project-vercel"><img src="https://img.shields.io/badge/link-KSH.hostel-1?style=flat&logoColor=red&labelColor=%237B7B7B&color=%23FFDA6A" alt="KSH.hostel"></a>
@@ -16,11 +16,15 @@ You can click on this link to view more pictures :point_right::point_right::poin
 ## Features
 |          Section               | Description                                                  
 | :--------------------------: | ------------------------------------------------------------ | 
-|    Navigation    | 1. A searchBar is provided for users to view hostels in Kaohsiung <br>2. Users can obtain more details about interested hostels by clicking the toggle icon |
+|    Navigation    | 1. d <br>2. Users can obtain more details about interested hostels by clicking the toggle icon |
 |      Header       | 1. Users can switch login and register form <br>2. Users will receive warning if the input is not valid <br>3. Users will be notified about the result of form submission| 
 |      Personal        | 1. Section A - Users can preview, cancel and upload profile picture (type: ico, jpg, jpeg, png) <br>2. Section B - Users can change password for their account |
-|              | 1. Section A - Users can preview, cancel and upload profile picture (type: ico, jpg, jpeg, png) <br>2. Section B - Users can change password for their account | 
-|      Personal        | 1. Section A - Users can preview, cancel and upload profile picture (type: ico, jpg, jpeg, png) <br>2. Section B - Users can change password for their account | 
+|      Skills        | 1. Section A - Users can preview, cancel and upload profile picture (type: ico, jpg, jpeg, png) <br>2. Section B - Users can change password for their account | 
+|       Soft skills       | 1. Section A - Users can preview, cancel and upload profile picture (type: ico, jpg, jpeg, png) <br>2. Section B - Users can change password for their account | 
+|       Projects       | 1. Section A - Users can preview, cancel and upload profile picture (type: ico, jpg, jpeg, png) <br>2. Section B - Users can change password for their account | 
+|       Resume       | 1. Section A - Users can preview, cancel and upload profile picture (type: ico, jpg, jpeg, png) <br>2. Section B - Users can change password for their account | 
+|       Feedback       | 1. Section A - Users can preview, cancel and upload profile picture (type: ico, jpg, jpeg, png) <br>2. Section B - Users can change password for their account | 
+|       Footer       | 1. Section A - Users can preview, cancel and upload profile picture (type: ico, jpg, jpeg, png) <br>2. Section B - Users can change password for their account | 
 
 
 ## Tools
