@@ -24,7 +24,7 @@ You can click on this link to view more pictures :point_right::point_right::poin
 |       Projects       | Three projects, including this website are exhibited
 |       Resume       | Users can be directed to the resume | 
 |       Feedback       | 1. The input will be validated before submission <br> 2. Response from the server is collected and conveyed to the users | 
-|       Footer       | Users can obtain my contact information | 
+|       Footer       | Users can obtain the author's contact information | 
 
 
 ## Tools
