@@ -1,4 +1,4 @@
-# :house_with_garden:	 KSH hostel :house_with_garden:	
+# portfolio- Xiong's here ! :wave:	
 
 Thus is a website where you can search hostels located in Kaohsiung, Taiwan. Moreover, you can register a new account and login to upload your profile picture and change your password.
 
@@ -11,7 +11,7 @@ Desktop (1366px)
 ![image](https://i.ibb.co/42rLqHx/1-carousel.png)
 
 You can click on this link to view more pictures :point_right::point_right::point_right: 
-<a href="https://drive.google.com/file/d/1d7NSFOvvdbVvarSmagZUtdQ_VGUghsxr/view?usp=drive_link">portfolio</a>
+<a href="https://drive.google.com/drive/folders/1DU5doUDO_EY30UDBx9uaKE6SJuurSFGb?usp=drive_link">portfolio</a>
 
 ## Features
 |          Components               | Description                                                  | URL                  |
@@ -42,18 +42,6 @@ Please follow the instructions to get a copy of this project.
 
 ### Clone
 ```sh
-git clone https://github.com/wooiseong/KSH-project.git
+git clone https://github.com/wooiseong/portfolio-project-vercel.git
 ```
 
-### Install pnpm packages
-```sh
-npm install
-```
-
-### Compile and Hot-Reload for Development
-
-```sh
-npm run dev
-```
-
-### Compile and Minify for Production
