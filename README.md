@@ -50,3 +50,5 @@ Please follow the instructions to get a copy of this project.
 git clone https://github.com/wooiseong/portfolio-project-vercel.git
 ```
 
+### Contact
+* <a href= "mailto:wooiseongseong96@gmail.com">Email:  &nbsp;wooiseongseong96@gmail.com</a>
