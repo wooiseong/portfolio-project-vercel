@@ -8,7 +8,7 @@ Demo here :point_down: <p></p>
 ## Project View
 Desktop (1366px)
 
-![image](https://ibb.co/zFvgMzw)
+![image](https://i.ibb.co/42rLqHx/1-carousel.png)
 
 You can click on this link to view more pictures :point_right::point_right::point_right: 
 <a href="https://drive.google.com/file/d/1d7NSFOvvdbVvarSmagZUtdQ_VGUghsxr/view?usp=drive_link">portfolio</a>
