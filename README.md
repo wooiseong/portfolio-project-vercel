@@ -1,6 +1,6 @@
 # portfolio- Xiong's here ! :wave:	
 
-Want to know about me? This website contains my personal information, including my preparation to be a frontend enginner. It is built with CSS and Javascript,without any framework or plugins (frontend part).  
+Want to know about me? This Single-Page website contains my personal information, including my preparation to be a frontend enginner. It is built with CSS and Javascript,not with any framework or plugins (frontend part).  
 
 Demo here :point_down: <p></p>
 <a href="https://portfolio-project-vercel-mocha.vercel.app/"><img src="https://img.shields.io/badge/link-KSH.hostel-1?style=flat&logoColor=red&labelColor=%237B7B7B&color=%2301b468" alt="KSH.hostel"></a>
@@ -16,15 +16,15 @@ You can click on this link to view more pictures :point_right::point_right::poin
 ## Features
 |          Section               | Description                                                  
 | :--------------------------: | ------------------------------------------------------------ | 
-|    Navigation    | 1. d <br>2. Users can obtain more details about interested hostels by clicking the toggle icon |
-|      Header       | 1. Users can switch login and register form <br>2. Users will receive warning if the input is not valid <br>3. Users will be notified about the result of form submission| 
-|      Personal        | 1. Section A - Users can preview, cancel and upload profile picture (type: ico, jpg, jpeg, png) <br>2. Section B - Users can change password for their account |
-|      Skills        | 1. Section A - Users can preview, cancel and upload profile picture (type: ico, jpg, jpeg, png) <br>2. Section B - Users can change password for their account | 
-|       Soft skills       | 1. Section A - Users can preview, cancel and upload profile picture (type: ico, jpg, jpeg, png) <br>2. Section B - Users can change password for their account | 
-|       Projects       | 1. Section A - Users can preview, cancel and upload profile picture (type: ico, jpg, jpeg, png) <br>2. Section B - Users can change password for their account | 
-|       Resume       | 1. Section A - Users can preview, cancel and upload profile picture (type: ico, jpg, jpeg, png) <br>2. Section B - Users can change password for their account | 
-|       Feedback       | 1. Section A - Users can preview, cancel and upload profile picture (type: ico, jpg, jpeg, png) <br>2. Section B - Users can change password for their account | 
-|       Footer       | 1. Section A - Users can preview, cancel and upload profile picture (type: ico, jpg, jpeg, png) <br>2. Section B - Users can change password for their account | 
+|    Navigation    | 1. The navigation items can direct users to its corresponding position <br> 2. The navigation bar indicates users' scrolled position |
+|      Header       | Three carousel items are displayed and switched automatically | 
+|      Personal     | Three different views can be switched by moving the cursor to respective title |
+|      Skills       | Battery icons indicate skill proficiency levels  | 
+|       Soft skills       | Four different soft skills are listed, with examples and descriptions | 
+|       Projects       | Three projects, including this website are exhibited
+|       Resume       | Users can be directed to the resume | 
+|       Feedback       | 1. The input will be validated before submission <br> 2. Response from the server is collected and conveyed to the users | 
+|       Footer       | Users can obtain my contact information | 
 
 
 ## Tools
