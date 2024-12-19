@@ -35,9 +35,11 @@ You can click on this link to view more pictures :point_right::point_right::poin
 6. Deployment&nbsp; (&nbsp;Vercel&nbsp;)
 
 ## Bugs/Future plans
-1. After users log in, the navigation bar default logo should change to users's uploaded profile picture. When the page is refresh, it takes 1-2 seconds to execute the change. The desired effect should be: once users log in, the logo should be replaced and the users' profile pictures are displayed directly.
+1. When the viewport is under 576px, the navigation bar is replaced with a toggler. The bar is displayed when the toggler is clicked. On vercel, the toggler is malfunctioned. The toggler functions properly when the website is built locally.
 
-2. If users cancel the previews many times, the requests with cancelled previews are still sent to the server. I think I do not clear the temporary storage of the previews when FileReader.onload is executed, or I do not terminate this asynchronous operation. To temporary solve this problem, the page is refresh if users cancel a preview. 
+2. Due to budget constraint, I do not apply for MySQL hosting. The feedback cannot be stored in mySql database. I wrote a simple response in nodeJS. You can refer <a href="https://github.com/wooiseong/portfolio-backend-on-vercel">portfolio-backend-on-vercel</a>
+
+For 
 
 ## Installation
 Please follow the instructions to get a copy of this project.
