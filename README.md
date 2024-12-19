@@ -3,7 +3,7 @@
 Thus is a website where you can search hostels located in Kaohsiung, Taiwan. Moreover, you can register a new account and login to upload your profile picture and change your password.
 
 Demo here :point_down: <p></p>
-<a href="https://portfolio-project-vercel-mocha.vercel.app/"><img src="https://img.shields.io/badge/link-KSH.hostel-1?style=flat&logoColor=red&labelColor=%237B7B7B&color=%23FFDA6A" alt="KSH.hostel"></a>
+<a href="https://vercel.com/wooiseongs-projects/portfolio-project-vercel"><img src="https://img.shields.io/badge/link-KSH.hostel-1?style=flat&logoColor=red&labelColor=%237B7B7B&color=%23FFDA6A" alt="KSH.hostel"></a>
 
 ## Project View
 Desktop (1366px)
@@ -14,19 +14,20 @@ You can click on this link to view more pictures :point_right::point_right::poin
 <a href="https://drive.google.com/drive/folders/1DU5doUDO_EY30UDBx9uaKE6SJuurSFGb?usp=drive_link">portfolio</a>
 
 ## Features
-|          Components               | Description                                                  | URL                  |
-| :--------------------------: | ------------------------------------------------------------ | -------------------- |
-|    Home    | 1. A searchBar is provided for users to view hostels in Kaohsiung <br>2. Users can obtain more details about interested hostels by clicking the toggle icon | /      |
-|      Login       | 1. Users can switch login and register form <br>2. Users will receive warning if the input is not valid <br>3. Users will be notified about the result of form submission| /login.html         |
-|      Account        | 1. Section A - Users can preview, cancel and upload profile picture (type: ico, jpg, jpeg, png) <br>2. Section B - Users can change password for their account | /account.html         |
+|          Section               | Description                                                  
+| :--------------------------: | ------------------------------------------------------------ | 
+|    Navigation    | 1. A searchBar is provided for users to view hostels in Kaohsiung <br>2. Users can obtain more details about interested hostels by clicking the toggle icon |
+|      Header       | 1. Users can switch login and register form <br>2. Users will receive warning if the input is not valid <br>3. Users will be notified about the result of form submission| 
+|      Personal        | 1. Section A - Users can preview, cancel and upload profile picture (type: ico, jpg, jpeg, png) <br>2. Section B - Users can change password for their account |
+|              | 1. Section A - Users can preview, cancel and upload profile picture (type: ico, jpg, jpeg, png) <br>2. Section B - Users can change password for their account | 
+|      Personal        | 1. Section A - Users can preview, cancel and upload profile picture (type: ico, jpg, jpeg, png) <br>2. Section B - Users can change password for their account | 
 
 
 ## Tools
-1. Designs&nbsp; (&nbsp;Bootstrap + Sass&nbsp;)
+1. Designs&nbsp; (&nbsp;CSS + Less&nbsp;)
 2. Building tool&nbsp; (&nbsp;Webpack&nbsp;) 
-3. Storage&nbsp; (&nbsp;localStorage&nbsp;)
-4. Validation&nbsp; (&nbsp;Bootstrap validator + jQuery validate&nbsp;)
-5. Backend&nbsp; (&nbsp;External API&nbsp;)
+3. Validation&nbsp; (&nbsp;Regular Expression(Javascript)&nbsp;)
+5. Backend&nbsp; (&nbsp;NodeJS + mySql&nbsp;)
 6. Deployment&nbsp; (&nbsp;Vercel&nbsp;)
 
 ## Bugs/Future plans
