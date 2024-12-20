@@ -34,7 +34,7 @@ You can click on this link to view more pictures :point_right::point_right::poin
 2. Building tool&nbsp; (&nbsp;Webpack&nbsp;) 
 3. Validation&nbsp; (&nbsp;Regular Expression(Javascript)&nbsp;)
 4. HTTP request&nbsp; (&nbsp;XMLHttpRequest&nbsp;)
-5. Backend&nbsp; (&nbsp;NodeJS + mySql&nbsp;)
+5. Backend&nbsp; (&nbsp;NodeJS + mySQL&nbsp;)
 6. Deployment&nbsp; (&nbsp;Vercel&nbsp;)
 
 ## Bugs/Future plans
