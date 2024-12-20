@@ -2,7 +2,7 @@
 
 Want to know about me? This Single-Page website contains my personal information, including my preparation to be a frontend enginner. It is built with CSS and Javascript,not with any framework or plugins (Front-end component).  
 
-For Back-end component, please refer to <a href="https://github.com/wooiseong/portfolio-nodeJS-mySql">portfolio-nodeJS-mySql</a>
+For Back-end component, please refer to  <a href="https://github.com/wooiseong/portfolio-nodeJS-mySql">portfolio-nodeJS-mySql</a>
 
 Demo here :point_down: <p></p>
 <a href="https://portfolio-project-vercel-mocha.vercel.app/"><img src="https://img.shields.io/badge/link-portfolio-1?style=flat&logoColor=red&labelColor=%237B7B7B&color=%2301b468" alt="portfolio"></a>
