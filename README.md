@@ -2,7 +2,7 @@
 
 Want to know about me? This Single-Page website contains my personal information, including my preparation to be a frontend enginner. It is built with CSS and Javascript,not with any framework or plugins (Front-end component).  
 
-For Back-end component, please refer to  <a href="https://github.com/wooiseong/portfolio-nodeJS-mySql">portfolio-nodeJS-mySql</a>
+For Back-end component, please refer to  <a href="https://github.com/wooiseong/portfolio-nodeJS-mySql">portfolio-nodeJS-mySQL</a>
 
 Demo here :point_down: <p></p>
 <a href="https://portfolio-project-vercel-mocha.vercel.app/"><img src="https://img.shields.io/badge/link-portfolio-1?style=flat&logoColor=red&labelColor=%237B7B7B&color=%2301b468" alt="portfolio"></a>
@@ -40,7 +40,7 @@ You can click on this link to view more pictures :point_right::point_right::poin
 ## Bugs/Future plans
 1. When the viewport is under 576px, the navigation bar is replaced with a toggler. The bar is displayed when the toggler is clicked. On vercel, the toggler is malfunctioned. The toggler functions properly when the website is built locally.
 
-2. Due to budget constraint, I do not apply for MySQL hosting. The feedback cannot be stored in mySql database. I wrote a simple response in nodeJS. You can refer to <a href="https://github.com/wooiseong/portfolio-backend-on-vercel">portfolio-backend-on-vercel</a>.<br><br> For nodeJS file connected to local mySQL database:  <a href="https://github.com/wooiseong/portfolio-nodeJS-mySql">portfolio-nodeJS-mySql</a>
+2. Due to budget constraint, I do not apply for MySQL hosting. The feedback cannot be stored in mySql database. I wrote a simple response in nodeJS. You can refer to <a href="https://github.com/wooiseong/portfolio-backend-on-vercel">portfolio-backend-on-vercel</a>.<br><br> For nodeJS file connected to local mySQL database:  <a href="https://github.com/wooiseong/portfolio-nodeJS-mySql">portfolio-nodeJS-mySQL</a>
 
 ## Installation
 Please follow the instructions to get a copy of this project.
