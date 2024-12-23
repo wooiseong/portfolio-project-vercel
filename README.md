@@ -18,9 +18,13 @@ You can click on this link to view more pictures :point_right::point_right::poin
 ## Features
 |          Sections               | Description                                                
 | :--------------------------: | ------------------------------------------------------------ |
-|    Home    | 1. A searchBar is provided for users to view hostels in Kaohsiung <br>2. Users can obtain more details about interested hostels by clicking the toggle icon 
-|      Login       | 1. Users can switch login and register form <br>2. Users will receive warning if the input is not valid <br>3. Users will be notified about the result of form submission
-|      Account        | 1. Section A - Users can preview, cancel and upload profile picture (type: ico, jpg, jpeg, png) <br>2. Section B - Users can change password for their account 
+|    Navigation    | 1. Users can be navigated to desired sections by clicking the corresponding selectors <br>2. The selectors will be highlighted when the webpage is reached the corresponding sections
+|      Header      | 1. There are three carousel items that will automatically played <br>2. The carousel is stopped during a mouse hover
+|      About        | Users can change the contents by placing the mouse on the corresponding selectors 
+|    Skills    | Battery icon levels represent the proficiency levels of skills
+|      Projects        | Links to Github and demo websites are embedded in the images
+|    Feedback    | 1. Users will get a warning message for invalid input format <br>2. The Backend response after submission will be conveyed to users via a toast 
+|      Footer        | Contact informations are embedded in the icons
 
 ## Tools
 1. Designs&nbsp; (&nbsp;CSS + LESS&nbsp;)
