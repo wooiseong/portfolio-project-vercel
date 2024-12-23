@@ -20,7 +20,7 @@ You can click on this link to view more pictures :point_right::point_right::poin
 | :--------------------------: | ------------------------------------------------------------ |
 |    Navigation    | 1. Users can be navigated to desired sections by clicking the corresponding selectors <br>2. The selectors will be highlighted when the webpage is reached the corresponding sections
 |      Header      | 1. There are three carousel items that will automatically played <br>2. The carousel is stopped during a mouse hover
-|      About        | Users can change the contents by placing the mouse on the corresponding selectors 
+|      About        | Users can change the content display by placing the mouse on the corresponding selectors 
 |    Skills    | Battery icon levels represent the proficiency levels of skills
 |      Projects        | Links to Github and demo websites are embedded in the images
 |    Feedback    | 1. Users will get a warning message for invalid input format <br>2. The Backend response after submission will be conveyed to users via a toast 
@@ -35,8 +35,8 @@ You can click on this link to view more pictures :point_right::point_right::poin
 6. Deployment&nbsp; (&nbsp;Vercel&nbsp;)
 
 ## Bugs/Future plans
-1. When the vieport is under 576px, the navigation bar will be hidden and a toggle icon is added. The navigation bar will pop up when the toggle icon is clicked. However, the icon is malfunctioned when the project is deployed on the Vercel. I will remove the icon and add navigation bar with smaller size in the future.
-   
+1. When the vieport is under 576px, the navigation bar will be hidden and a toggle button is added. The navigation bar will pop up when the toggle icon is clicked. However, the button is malfunctioned when the project is deployed on the Vercel. I will remove the button and add a navigation bar with smaller size in the future.
+
 2. Due to budget consideration, I did not apply for a remote MySQL database. I wrote a simple nodeJS file as the response when the feedback is submitted. Please refer to this link <a href="https://github.com/wooiseong/portfolio-backend-on-vercel">portfolio-backend-on-vercel</a> <br><br> For nodeJS file connected to local mySQL database: <a href="https://github.com/wooiseong/portfolio-nodeJS-mySQL">portfolio-nodeJS-mySQL</a>
 
 ## Installation
