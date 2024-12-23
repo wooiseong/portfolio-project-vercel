@@ -1,17 +1,17 @@
 # Portfolio :smiley:
 
-This is a website built with Javascript and Bootstrap. You can search hostels located in Kaohsiung, Taiwan. Moreover, you can register a new account and login to upload your profile picture and change your password.
+This is a website built with Javascript, CSS and LESS only. You can find details about me, including how I prepare my self to be a frontend engineer.
 
 Demo here :point_down: <p></p>
-<a href="https://ksh-project-vercel-1.vercel.app/"><img src="https://img.shields.io/badge/link-KSH.hostel-1?style=flat&logoColor=red&labelColor=%237B7B7B&color=%23FFDA6A" alt="KSH.hostel"></a>
+<a href="https://portfolio-project-vercel-mocha.vercel.app/"><img src="https://img.shields.io/badge/link-KSH.hostel-1?style=flat&logoColor=red&labelColor=%237B7B7B&color=%23FFDA6A" alt="KSH.hostel"></a>
 
 ## Project View
 Desktop (1366px)
 
-![image](https://i.ibb.co/1Xyx46B/1-header-before-Login.png)
+![image](https://i.ibb.co/42rLqHx/1-carousel.png)
 
 You can click on this link to view more pictures :point_right::point_right::point_right: 
-<a href="https://drive.google.com/drive/folders/16bUqu92zvwPCL3W7V19hLtldLZySoecc?usp=sharing">KSH hostel</a>
+<a href="https://drive.google.com/drive/folders/1DU5doUDO_EY30UDBx9uaKE6SJuurSFGb?usp=drive_link">Portfolio</a>
 
 ## Features
 |          Components               | Description                                                  | URL                  |
