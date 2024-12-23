@@ -1,6 +1,6 @@
 # portfolio :smiley:
 
-This is a website built with Javascript, CSS and LESS only. You can find details about me, including how I prepare my self to be a Frontend engineer.
+This is a Single-Paged Website built with Javascript, CSS and LESS only. You can find details about me, including how I prepare myself to be a Frontend engineer.
 
 For Backend component, please refer to this link <a href="https://github.com/wooiseong/portfolio-nodeJS-mySQL">portfolio-nodeJS-mySQL</a>
 
@@ -16,11 +16,11 @@ You can click on this link to view more pictures :point_right::point_right::poin
 <a href="https://drive.google.com/drive/folders/1DU5doUDO_EY30UDBx9uaKE6SJuurSFGb?usp=drive_link">portfolio</a>
 
 ## Features
-|          Components               | Description                                                  | URL                  |
-| :--------------------------: | ------------------------------------------------------------ | -------------------- |
-|    Home    | 1. A searchBar is provided for users to view hostels in Kaohsiung <br>2. Users can obtain more details about interested hostels by clicking the toggle icon | /      |
-|      Login       | 1. Users can switch login and register form <br>2. Users will receive warning if the input is not valid <br>3. Users will be notified about the result of form submission| /login.html         |
-|      Account        | 1. Section A - Users can preview, cancel and upload profile picture (type: ico, jpg, jpeg, png) <br>2. Section B - Users can change password for their account | /account.html         |
+|          Sections               | Description                                                
+| :--------------------------: | ------------------------------------------------------------ |
+|    Home    | 1. A searchBar is provided for users to view hostels in Kaohsiung <br>2. Users can obtain more details about interested hostels by clicking the toggle icon 
+|      Login       | 1. Users can switch login and register form <br>2. Users will receive warning if the input is not valid <br>3. Users will be notified about the result of form submission
+|      Account        | 1. Section A - Users can preview, cancel and upload profile picture (type: ico, jpg, jpeg, png) <br>2. Section B - Users can change password for their account 
 
 ## Tools
 1. Designs&nbsp; (&nbsp;CSS + LESS&nbsp;)
