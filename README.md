@@ -33,9 +33,7 @@ You can click on this link to view more pictures :point_right::point_right::poin
 ## Bugs/Future plans
 1. When the vieport is under 576px, the navigation bar will be hidden and a toggle icon is added. The navigation bar will pop up when the toggle icon is clicked. However, the icon is malfunctioned when the project is deployed on the Vercel. I will remove the icon and add navigation bar with smaller size in the future.
    
-2. Due to budget consideration, I did not apply for a remote MySQL database. I wrote a simple nodeJS file as the response when the feedback is submitted. Please refer to this link <a href="https://github.com/wooiseong/portfolio-backend-on-vercel">portfolio-backend-on-vercel</a>
-
-For nodeJS file connected to local mySQL database: <a href="https://github.com/wooiseong/portfolio-nodeJS-mySQL">portfolio-nodeJS-mySQL</a>
+2. Due to budget consideration, I did not apply for a remote MySQL database. I wrote a simple nodeJS file as the response when the feedback is submitted. Please refer to this link <a href="https://github.com/wooiseong/portfolio-backend-on-vercel">portfolio-backend-on-vercel</a> <br><br> For nodeJS file connected to local mySQL database: <a href="https://github.com/wooiseong/portfolio-nodeJS-mySQL">portfolio-nodeJS-mySQL</a>
 
 ## Installation
 Please follow the instructions to get a copy of this project.
