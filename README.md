@@ -1,9 +1,9 @@
 # Portfolio :smiley:
 
-This is a website built with Javascript, CSS and LESS only. You can find details about me, including how I prepare my self to be a frontend engineer.
+This is a website built with Javascript, CSS and LESS only. You can find details about me, including how I prepare my self to be a Frontend engineer.
 
 Demo here :point_down: <p></p>
-<a href="https://portfolio-project-vercel-mocha.vercel.app/"><img src="https://img.shields.io/badge/link-KSH.hostel-1?style=flat&logoColor=red&labelColor=%237B7B7B&color=%23FFDA6A" alt="KSH.hostel"></a>
+<a href="https://portfolio-project-vercel-mocha.vercel.app/"><img src="https://img.shields.io/badge/link-portfolio-1?style=flat&logoColor=red&labelColor=%237B7B7B&color=%2301B468" alt="portfolio"></a>
 
 ## Project View
 Desktop (1366px)
